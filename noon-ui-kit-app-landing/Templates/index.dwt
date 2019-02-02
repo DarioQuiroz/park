@@ -1,0 +1,1156 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>Parque Industrial Querétaro</title>
+	<!-- TemplateEndEditable -->
+	<!--empiezan adaptaciones de share en redes sociales-->
+    
+    <meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta data-react-helmet="true" http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data" />
+    <meta data-react-helmet="true" name="author" content="interactua-mkt.com.mx" />
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta data-react-helmet="true" name="description" content="La mejor opción para líderes, hospeda tu empresa y conóce nuestros beneficios."/>
+    
+    <meta data-react-helmet="true" name="google-site-verification" content="1rE9jjZz1N50ap3MzuT3b31qXOWEN4Z--OfhREYiwLw" />
+    <meta data-react-helmet="true" property="og:title" content="Nosotros somos un parque industrial Queretano" />
+    <meta data-react-helmet="true" property="og:description" content="La mejor opción para líderes, hospeda tu empresa y conóce nuestros beneficios."/>
+    <meta data-react-helmet="true" property="og:image" content="http://piq.com.mx/images/images/iphone1.png" />
+    <meta data-react-helmet="true" property="og:url" content="http://piq.com.mx" />
+    <meta data-react-helmet="true" property="og:locale" content="es_LA" />
+    <meta data-react-helmet="true" property="og:type" content="website"/>
+    <meta data-react-helmet="true" property="og:site_name" content="PIQ"/>
+    
+    
+
+    <!--TERMINAN adaptaciones de share en redes sociales-->
+    
+    <link rel="stylesheet" href="css/UI-Flag-master/flag.css" />
+    <link rel="stylesheet" href="css/UI-Flag-master/flag.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity=
+    "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/linearicons.css" />
+	<link rel="stylesheet" href="css/iconmoon.css" />
+	<link rel="stylesheet" href="css/animat/animate.min.css" />
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="css/themes/default/default.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="css/space.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="SVG/PLANO.html" />
+    <link rel="" href="php/php - mysql.txt"/>
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+</head>
+<body>
+	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+	<header id="home" class="header">
+		<div class="main_menu_bg navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="nave_menu">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+                          aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+                                
+                               <a  href="#home" id="logo">
+                                <div class="logo hide-navigation">
+                                  <img src="images/piq.png"   alt="Parque_industrial_queretaro" class="logo-light"/>
+                                  <img src="images/piq-01.svg" alt="Parque_industrial_queretaro" class="logo-dark">
+                                 </div>
+				   	            </a>
+							
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						  
+						  <ul class="nav navbar-nav navbar-right">
+							<li><a href="#home">Home</a></li>
+                            <li><a href="#nosotros">Quiénes Somos</a></li>
+							<li><a href="#features">INFRAESTRUCTURA</a></li>
+							<li><a href="#works">SERVICIOS</a></li>
+							<li><a href="#clients">TESTIMONIOS</a></li>
+                            <li><a href="#clientes">CLIENTES</a></li>
+							<li><a href="#joinus">contacto</a></li>
+							
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+					</div>	
+				</div><!--End of row -->
+				
+			</div><!--End of container -->
+			
+		</div>
+	</header> <!--End of header -->
+
+
+	
+<!--Video Header-->
+
+<video  class=".video-responsive" autoplay loop muted style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 0%; transform: translate(0%, -50%); visibility: visible; opacity: 1; width: 100%; height: 110%; margin:0; padding:0;"><source src="video/video.mp4" type="video/mp4"><source src="video/video.webm" type="video/webm"><source src="images/videoblocks-aerial-of-active-industrial-buildings-small-warehouse-spaces_rkjt3n7gz__D.ogv" type="video/ogg"></video>
+
+<!--End of Video Header-->
+
+<!--Banner Section -->
+	<section id="banner" class="banner">
+     
+		<div class="container">
+			<div class="row">
+            
+				 <!-- <div class="main_banner_area">
+                
+                   <div class="col-md-6 col-sm-6">
+						<div class="single_banner wow fadeIn">
+							<!--<img style="height:550px; padding:0; margin:0;"src="images/iphone_PIQ.svg" alt="industrial" />
+						</div> 
+					</div>--> 
+					<div class="col-md-6 col-sm-6">
+						<div class="single_banner_text wow zoomIn" data-wow-duration="1s">
+                        <div style="padding-bottom:30%;"></div>
+							<h2>PARQUE INDUSTRIAL QUERÉTARO</h2>
+							<p >La mejor opción para líderes, hospeda tu empresa y conóce nuestros beneficios.</p>	
+						</div>
+					</div>
+	
+					<div class="scrolldown">
+						<a href="#features" class="scroll_btn"></a>
+					</div>
+                    
+                 
+				</div>
+				
+				
+			</div>
+		</div>
+	</section><!-- End of Banner Section -->
+ 
+
+
+<!--Abouts Section -->	
+	<section id="abouts" class="abouts">
+		<div class="container">
+			<div class="row">
+				<div class="abouts_content">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_abouts_img text-center wow fadeInLeft" data-wow-duration="1s">
+							<img src="images/globe2.svg"alt="global" />
+ 
+						</div>
+					</div>
+
+					<div id="nosotros"  class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_abouts_text wow fadeInRight" data-wow-duration="1s">
+							<h2 >A cerca de nosotros</h2>
+							<p>
+                            Desde 1997, el Parque Industrial Querétaro (PIQ) se ha consolidado como un complejo integral para el desarrollo de 
+                            empresas <b>nacionales e internacionales</b>.</p>
+                            
+                            <p>Mediante una mezcla efectiva de infraestructura y servicios de primer nivel, el Parque ha brindado espacios que optimizan 
+                            el crecimiento y oportunidad de negocio de la industria, contribuyendo paralelamente a mejorar la calidad de vida de la 
+                            población <b>cuidando siempre el entorno social y ecológico.</b>
+                            </p>
+                            <p>
+                            Con una <b>sólida trayectoria y amplia experiencia</b>, el PIQ es reconocido como un complejo industrial único en 
+                            Latinoamérica, ofreciendo un espacio seguro, sustentable y con oportunidades de desarrollo.
+                            </p>
+						</div>
+                        <button class="alert-info">disponibilidad</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- End of Abouts Section -->	
+
+
+<!--Features Section -->
+	
+	<section id="features" class="features">
+		<div class="container">
+			<div class="row">
+				<div class="main_features">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_features_text wow fadeIn" data-wow-duration="2s">
+							<h2 style="padding-bottom:10%;">INFRAESTRUCTURA</h2>
+                            <ol style="line-height:30px;">
+                               <li>
+                               Abastecimiento y cuidado de recursos hidráulicos, ofreciendo agua de servicio, agua tratada, sistemas de riego y 
+                               drenaje.Gas natural, energía eléctrica, líneas de teléfono, voz y datos por fibra óptica.
+                               </li>
+                              
+                               <li>
+                               Dos subestaciones eléctricas con capacidad de 90 MVA.
+                               </li>
+                               <li>
+                               Urbanización de calidad, contando con amplias avenidas pavimentadas, banquetas de concreto, áreas verdes y alumbrado, 
+                               entre otras.Mantenimiento constante y profesional.
+                               </li>
+                               <li>Seguridad y vigilancia, con patrullas operando las 24 horas del día.</li>
+                               <li>Red contra incendios certificado, con carro bomba.</li>
+                               <li>Administración eficiente y en comunicación cercana con las empresas para la mejora continua del Parque.</li>
+                               
+                            </ol>
+ 
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_features_img wow fadeIn" data-wow-duration="2s">
+							<img src="images/infraestructura.svg" alt="infraestructura" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- End of Features Section -->
+
+
+
+	<section id="works" class="works">
+		<div class="container">
+			<div class="row">
+				<div class="main_works">
+					
+					<div class="col-md-3 col-sm-12 col-xs-12">
+						<div class="single_works text-right wow fadeInLeft" data-wow-duration="2s">
+							<div class="single_works_deatels">
+								<i class="fas fa-user-check"></i>
+								<h5>SERVICIOS</h5>
+								<p>Infraestructura y servicios de primer nivel facilitando la implementación y extensión de redes de servicios públicos.
+                                </p>
+							</div>
+							<div class="single_works_deatels">
+								<i class="fas fa-chart-line"></i>
+								<h5>INNOVACIÓN</h5>
+								<p>Concentración de usos industriales, así como Actualización e innovación, permitiendo la difusión y el uso de nuevas 
+                                tecnologías.</p>
+							</div>
+							<div class="single_works_deatels">
+								<i class="fas fa-user-friends"></i>
+								<h5>SINERGIA</h5>
+								<p>Posibilita la sinergia y complementación industrial entre diversas compañías.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="single_works_text_middel text-center wow fadeInDown" data-wow-duration="2s">
+							<img src="images/SERVICIOS.svg" alt="" />
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-12 col-xs-12">
+						<div class="single_works text-left wow fadeInRight" data-wow-duration="2s">
+							<div class="single_works_deatels">
+								<i class="fas fa-balance-scale"></i>
+								<h5>POLÍTICAS PÚBLICAS</h5>
+								<p>Acceso a las políticas públicas de estímulo a la industria.</p>
+							</div>
+							
+							<div class="single_works_deatels">
+								<i class="fas fa-lock"></i>
+								<h5>SEGURIDAD</h5>
+								<p>Accesos controlados, protección perimetral y vigilancia permanente.</p>
+							</div>
+							
+							<div class="single_works_deatels">
+								<i style="margin-left:5px;" class="fas fa-certificate"></i>
+                                <i style="margin-left:5px;" class="fas fa-certificate"></i>
+                                <i style="margin-left:5px;" class="fas fa-certificate"></i>
+                           
+								<h5>Certificaciones</h5>
+								<p><b>Norma Mexicana de Parques Industriales: NMX-R-046-SCFI-2005.</b>
+                                  El primer parque industrial en México con Certificado de Industria Limpia.</p>
+							</div><!-- End of single works deatels -->
+						</div>
+					</div><!-- End of col-md-4 -->
+				</div><!-- End of main Works -->
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+	</section>
+	
+
+	
+
+	
+	
+	<!-- Video Section -->
+	
+	
+	<section id="video" class="video_area wow fadeIn"  data-wow-duration="2s" data-wow-dealy="1.5s">
+		<div class="container">
+			<div class="row">
+				<div class="main_video_content text-center">
+					<div class="head_title">
+						<h2>Let's See a Demo</h2>
+						<p>Conveniently whiteboard prospect catalysts for change without principle centere empower.</p>
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<div class="icon_area">
+							<a href="http://youtube.com" class="youtube-media"><img src="images/play.png" alt="play-icon" /></a>
+						</div>
+					</div>
+					
+					<p>Download the new app now: <a href="">uimint.com/noon</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+<!-- TESTIMONIOS Section -->
+	
+    
+	<section id="clients" class="clients wow fadeIn" data-wow-duration="3s">
+		<div class="container">
+			<div class="row">
+				<div class="main_clients_content">
+					<div class="head_title text-center">
+						<h2>TESTIMONIOS</h2>
+					</div>
+					<div class="main_clients">
+						<div class="col-md-4">
+							<div class="single_clients">
+								<p>"La calidad de la infraestructura y seguridad; la calidad de sus clientes; el mantenimiento; el excelente servicio y 
+                                la relación abierta con la administración del parque son sólo algunos factores que nos aseguran que la decisión de 
+                                ubicarnos en PIQ fue acertada e inteligente" </p>
+								<div class="clients_details">
+									<div class="clients_img">
+										<img src="images/clients.png" alt="" />
+									</div>
+									<div class="clients_name">
+										<p>MANN + HUMMEL</p>
+										<p><a href=""><i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a><a href="">
+                                        <i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="single_clients">
+								<p>"Necesitábamos unas instalaciones de clase mundial, con ubicación estratégica para nuestro tipo de negocio. Estamos 
+                                orgullosos de tener el nombre de nuestra empresa en PIQ"</p>
+								<div class="clients_details">
+									<div class="clients_img">
+										<img src="images/clients.png" alt="" />
+									</div>
+									<div class="clients_name">
+										<p>APEX TOOL GROUP</p>
+										<p><a href=""><i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a><a href="">
+                                        <i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="single_clients">
+								<p>"PIQ fue la solución no sólo por nuestros requerimientos de terreno, sino también por la infraestructura que 
+                                requeríamos"</p>
+								<div class="clients_details">
+									<div class="clients_img">
+										<img src="images/clients.png" alt="" />
+									</div>
+									<div class="clients_name">
+										<p>TRW</p>
+										<p><a href=""><i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a><a href="">
+                                        <i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a><a href=""><i class="fa fa-star"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+<!--Termina sección de testimonios-->
+
+<!-- Customize Section -->
+	
+  
+	<section id="customiz" class="customiz wow fadeIn" data-wow-duration="2s">
+		<div class="container">
+			<div class="row">
+				<div class="main_customiz">
+					<div class="col-md-12 col-lg-12 col-sm-12  col-xs-12">
+						<div class="single_customiz">
+                         <div style="margin-bottom:5%;"></div> 
+							<h2>DISPONIBILIDAD DE TERRENOS</h2>
+						
+                            <object  class="col-md-12 col-lg-12 col-sm-12  col-xs-12" id="mapita" data="SVG/PLANO.html" type="image/svg+xml" width="800"
+                            height="800"></object>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+<!-- termina Customize Section -->
+
+         
+	
+<section id="features" class="features">
+		<div  id="clientes" class="container">
+			<div class="row">
+				<div class="main_features">
+                <h2  class="text-center"> Nuestros clientes </h2>
+                <div style="margin-bottom:5%;"></div> 
+                    <div  class="container">
+                     <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5" >  </div>
+                        <a href="files/Directorio_de_empresas.pdf" class=" text-center col-md-2 action-button shadow animate blue">Descargar lista </a>
+                        <div class="col-lg-5 col-md-5 col-sm-5" > </div>
+                      </div> 
+                     </div>
+                </div>
+                
+
+                  <div class="wrapper">
+                   <div class="col-lg-6 col-md-6 col-sm-6" >  
+                        <!--ALEMANIA-->
+                   
+                            <div class="tab">
+                              <input id="tab-one" type="checkbox" name="tabs">
+                              <label for="tab-one"><i class="de flag"></i>ALEMANIA</label>
+                              <div class="tab-content">
+                                <ul> 
+                                     
+                                    <li><a href="" target="_blank"> AUTOMOTIVE CARRIER AND PROTECTION SYSTEM</a>
+                                    </li>     
+                                    <li><a href="http://www.durr.com/" target="_blank">Durr</a>
+                                    </li>
+                                    <li><a href="http://www.eckerle-group.com/" target="_blank">Eckerle</a>
+                                    </li>
+                                    <li><a href="http://www.egoproducts.com/" target="_blank">Ego Components</a>
+                                    </li>
+                                    <li><a href="http://www.jafra.com.mx/" target="_blank">Jafra</a>
+                                    </li>
+                                    <li><a href="http://www.khmex.com/" target="_blank">KH Mex</a>
+                                    </li>
+                                    <li><a href="http://www.klueber.com/" target="_blank">KLUBER LUBRICACION MEXICANA</a>
+                                    </li>
+                                    <li><a href="" target="_blank">MANN + HUMMEL MEXICO</a>
+                                    </li>
+                                    <li><a href="http://www.peter-lacke.de/" target="_blank">Peter&nbsp;Lacke</a>
+                                    </li>
+                                    <li><a href="http://www.mx.sew-eurodrive.com/" target="_blank">Sew&nbsp;Eurodrive</a>
+                                    </li>
+                                    <li><a href="http://www.kostal-kontakt-systeme.com/en/mexiko.php">Kostal</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.reinhausen.com/es/desktopdefault.aspx/tabid-1784/2502_read-7260/">
+                                    Reinhausen</a>
+                                    </li>
+                                    <li><a href="https://www.dbschenker.com/mx-es">Schekner</a>
+                                    </li>
+                                    <li><a href="https://www.novem.de/en/meta/contact">Novem Car Interior</a>
+                                    </li>
+                                    <li><a href="" target="_blank">FRENOS Y MECANISMOS</a>
+                                    </li>
+                                    <li><a href="" target="_blank">KIRCHHOFF AUTOMOTIVE </a>
+                                    </li>
+                                    <li><a href="" target="_blank">REINHAUSEN MEXICO</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                           </div>
+                        <!--JAPÓN-->
+                            <div class="tab">
+                              <input id="tab-two" type="checkbox" name="tabs">
+                              <label for="tab-two"><i class="jp flag"></i>JAPÓN</label>
+                              <div class="tab-content">
+                                <ul>           
+                                    <li><a href="http://www.fegq.com.mx/" target="_blank">FEG Querétaro</a>
+                                    </li>
+                                    <li><a href="http://www.hitachi-automotive.co.jp/en" target="_blank">Hitachi Automotive </a>
+                                    </li>
+                                    <li><a href="#" target="_blank">Kurashiki Kako</a>
+                                    </li>
+                                    <li><a href="#" target="_blank">Maruichimex </a>
+                                    </li>
+                                    <li><a href="#" target="_blank">Toyota Tsusho</a>
+                                    </li>
+                                    <li><a href="http://www.hitachi-automotive.co.jp/en" target="_blank">Systems</a>
+                                    </li>
+                                    <li><a href="http://www.sansho-corp.co.jp/english/index.html" target="_blank">Sansho</a>
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+                        <!--ESPAÑA-->
+                            <div class="tab">
+                              <input id="tab-three" type="checkbox" name="tabs">
+                              <label for="tab-three"><i class="es flag"></i>ESPAÑA</label>
+                              <div class="tab-content">
+                                  <ul>
+                                    <li><a href="http://www.aernnova.com/" target="_blank">Aernnova Aerospace</a>
+                                    </li>
+                                    <li> <a href="http://www.aernnova.com/" target="_blank">Aernnova Componentes</a>
+                                    </li>
+                                    <li> <a href="http://en.altcam.com/" target="_blank">Altcam</a>
+                                    </li>
+                                    <li><a href="http://www.sitmobel.com.mx/" target="_blank">Sit Mobel</a>
+                                    </li>
+                                    <li><a href="#">Irritec</a>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </div>
+                        
+                        <!--SUIZA-->
+                           <div class="tab">
+                              <input id="tab-four" type="checkbox" name="tabs">
+                              <label for="tab-four"> <i class="ch flag"></i>SUIZA</label>
+                              <div class="tab-content">
+                                  <ul>
+                                    <li><a href="http://www.ronal.com.mx/" target="_blank">Ronal</a>
+                                    </li>
+                                    <li><a href="#">Monosuisse</a>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </div>
+                        <!--HOLANDA-->
+                             <div class="tab">
+                              <input id="tab-five" type="checkbox" name="tabs">
+                              <label for="tab-five"> <i class="nl flag"></i>HOLANDA</label>
+                              <div class="tab-content">
+                                  <ul>
+                                    <li><a href="http://www.itb.nl/" target="_blank">Dooremalen Industries</a></li>          
+                                  </ul>
+                              </div>
+                            </div>
+                            
+                        <!--FRANCIA-->     
+                             <div class="tab">
+                              <input id="tab-six" type="checkbox" name="tabs">
+                              <label for="tab-six"><i class="fr flag"></i>FRANCIA</label>
+                              <div class="tab-content">
+                                  <ul>
+                                    <li><a href="http://www.albea-group.com/" target="_blank">Albea</a>
+                                    </li>
+                                    <li><a href="http://www.bticino.com.mx/" target="_blank">Bticino</a>
+                                    </li>
+                                    <li><a href="http://www.plakacomex.com.mx/" target="_blank">Comex-Lafarge</a>
+                                    </li>
+                                    <li><a href="http://www.messierservices.com/" target="_blank">Messier Services</a>
+                                    </li>
+                                    <li><a href="http://www.valeosylvania.com/" target="_blank">Valeo Sylvania </a>
+                                    </li> 
+                                    <li><a href="" target="_blank">SAFRAN LANDING SYSTEMS</a>
+                                    </li> 
+                                 
+                                           
+                                  </ul>
+                              </div>
+                            </div>
+                        <!--INDIA-->
+                              <div class="tab">
+                              <input id="tab-seven" type="checkbox" name="tabs">
+                              <label for="tab-seven">   <i class="in flag"></i>INDIA</label>
+                              <div class="tab-content">
+                                  <ul>
+                                    <li><a href="http://www.metecnomexico.com/" target="_blank">Metecno</a></li>       
+                                  </ul>
+                              </div>
+                            </div>
+                  <!--MÉXICO-->
+                            <div class="tab">
+                            <input id="tab-eight" type="checkbox" name="tabs">
+                            <label for="tab-eight"><i class="mx flag"></i>MÉXICO 1</label>
+                            <div class="tab-content">
+                          
+                                <ul>
+                                  <li><a href="#" target="_blank">Accel Logística</a>
+                                  </li>
+                                  <li><a href="http://www.abamex.net/" target="_blank">Abastecedora Mexiquense / Lubricantes Industriales Abamex</a>
+                                  </li>
+                                  <li><a href="" target="_blank">AGSE SERVICIO INDUSTRIAL QUERETARO</a>
+                                  </li>
+                                  <li><a href="http://www.abinsa.com.mx/" target="_blank">AB Steel</a>
+                                  </li>
+                                  <li><a href="http://www.aerosolesyliquidos.com/" target="_blank">Aerosoles&nbsp;y&nbsp;L&iacute;quidos</a>
+                                  </li>
+                                  <li><a href="http://www.aptargroup.com/" target="_blank">Aptar</a>
+                                  </li>
+                                  <li><a href="" target="_blank">AWA</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">AM Desarrollos</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">AMN  INTERNATIONAL</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">ABINSA (ABSTEEL -ABTECH)</a>
+                                  </li>  
+                                  <li><a href="#" target="_blank">AK TUBE (the offshore group Bajio)</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank">BRAVO ENERGY</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank"> "BTD" TROQUELADORA BATESVILLE DE MEXICO</a>
+                                  </li>
+                                  <li><a href="http://cindetecresearch.org/en/index.php" target="_blank">Cindetec</a>
+                                  </li>
+                                  <li><a href="http://www.copperclad.com.mx/" target="_blank">Copper&nbsp;Clad</a>
+                                  </li>
+                                  <li><a href="http://www.episa.com.mx" target="_blank">Cordetek</a>
+                                  </li>
+                                  <li><a href="#" target="_blank"> CENTERLINE México (CopperWelding)</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank"> CINDETEC</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank">COPPER CLAD</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank">Corruempaques</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank">CYROXTECH</a>
+                                  </li>   
+                                  <li><a href="#" target="_blank">Contyquim</a>
+                                  </li> 
+                                 </ul>
+                                </div>          
+                              <div class="tab-content">  
+                                <ul>
+                                  <li><a href="#" target="_blank">Desarrollos Industriales y de Vivienda de Celaya</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">DR ENC</a>
+                                  </li> 
+                                  <li><a href="#" target="_blank">Estaciónde Servicio Monet</a>
+                                  </li>
+                                  <li><a href="http://www.fgelectrical.com/" target="_blank">FG&nbsp;Electrical&nbsp;&nbsp;</a>
+                                  </li> 
+                                  <li><a href="http://www.fracsaalloys.com.mx/" target="_blank">Fracsa Alloys</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">FABRI-QUILT  DE  MEXICO</a>
+                                  </li>
+                                  <li><a href="http://www.grupoautocar.com.mx/" target="_blank">Grupo Autocar</a>
+                                  </li>
+                                  <li><a href="http://www.grupo-ed.com/#agencia-aduanal" target="_blank"> Grupo Eduardo Díaz</a>
+                                  </li>
+                                  <li><a href="#"target="_blank">Grupo Inmobiliario Tierra</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">GRUAS SALAS</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">GLOBAL GRAPHICS CUE</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">HINES INTERESTS LIMITED PARTNERSHIP </a>
+                                  </li>
+                                  <li><a href="#" target="_blank">Inmobiliaria Vigas</a>
+                                  </li>
+                                  <li><a href="http://www.intermex.com/" target="_blank">Intermex</a>
+                                  </li>
+                                  <li><a href="http://inprotecmexico.com/" target="_blank">Inprotec</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">INMOBILIARIA MONET</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">INDUSTRIAS CAZEL</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">INYECCIONES PLASTICAS DE QUERETARO</a>
+                                  </li>
+                                  <li><a href="http://www.pulsoindustrial.com/index.php/directorio/ubicacion/item/jojisa" target="_blank">Jojisa</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">Kupcen</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">KNAUF México</a>
+                                  </li>
+                                  <li><a href="#" target="_blank">LB Pallets</a>
+                                  </li>
+                                </ul> 
+                            </div> 
+                            </div>
+<!--MÉXICO 2-->  
+     <div class="tab">
+          <input id="tab-ten" type="checkbox" name="tabs">
+          <label for="tab-ten"></i>MÉXICO 2</label>
+          <div class="tab-content">
+                    <ul>
+                      <li><a href="#" target="_blank">Mecapromex</a>
+                      </li>
+                      <li><a href="http://www.mppsolutions.com.mx/" target="_blank">Metal Plastic Paint Solutions</a>
+                      </li>
+                      <li><a href="#" target="_blank">Myfac</a>
+                      </li>
+                      <li><a href="#" target="_blank">Metalmind</a>
+                      </li> 
+                      <li><a href="#" target="_blank">MITCHELL  PLASTICS</a>
+                      </li>
+                      <li><a href="http://www.gruponavex.com/" target="_blank">Navex</a>
+                      </li>
+                      <li><a href="http://nucitec.com.mx/" target="_blank">Nucitec</a>
+                      </li>
+                      <li><a href="#" target="_blank">OUTHELPING </a>
+                      </li>
+                       <li><a href="http://www.oxxo.com/" target="_blank">OXXO</a>
+                      </li>
+                      <li><a href="#" target="_blank">OFFSHORE GROUP BAJIO</a>
+                      </li>
+                      <li><a href="#" target="_blank">Provem</a>
+                      </li>
+                      <li><a href="#" target="_blank">PROVEM</a>
+                      </li>
+                       <li><a href="#" target="_blank">PLASTEK GROUP</a>
+                      </li>
+                       <li><a href="#" target="_blank">PYR de Querétaro</a>
+                      </li>
+                      <li><a <a href="#" target="_blank">Rodar Plastics</a>
+                      </li>
+                      <li><a href="http://www.rubrica.com.mx/" target="_blank">Rubrica Inmobiliaria</a>
+                      </li>
+                      <li><a href="http://www.seire.com.mx/" target="_blank">Seire</a>
+                      </li>
+                      <li><a href="http://www.serviacero.com/jsp/frametemplate.jsp?ent_index=2" target="_blank">Serviacero Planos</a>
+                      </li>
+                      <li> <a href="http://pcqro.com.mx/satelite.php" target="_blank">Stelite</a>
+                      </li>
+                      <li><a href="#" target="_blank">SOLISTICA</a>
+                      </li>
+                       <li><a href="#" target="_blank">SITMOBEL</a>
+                      </li>
+                       <li><a href="#" target="_blank">SOLUCIONES LOGISTICAS 3PL</a>
+                      </li>
+                     </ul>
+                <div class="tab-content">   
+                  <ul>
+                      <li><a href="http://www.transportes-delatorre.com/" target="_blank">Transportes Teatsa</a>
+                      </li>
+                      <li><a href="http://www.vynmsa.com/" target="_blank">Vynmsa</a>
+                      </li>
+                      <li><a href="http://www.vesta.com.mx/" target="_blank">Vesta Management</a>
+                      </li>
+                      <li><a href="http://www.vinoplastic.com.mx/" target="_blank" >Viño Plastic</a>
+                      </li>
+                      <li><a href="http://www.zimmer.com.mx/" target="_blank">Zimmer</a>
+                      </li>
+                 </ul>
+                </div>
+          </div>
+        </div>  
+</div>
+                          
+
+ 
+<!--segunda columna-->
+
+<div class="col-lg-6 col-md-6 col-sm-6">     
+
+ 
+     <div class="tab">
+          <input id="tab-eleven" type="checkbox" name="tabs">
+          <label for="tab-eleven"><i class="kr flag"></i><i class="kp flag"></i>COREA</label>
+          <div class="tab-content">
+              <ul>
+                <li>Chem Trend</li>
+                <li><a href="http://www.cjgls.com/" target="_blank">CJ GLS America</a>
+                </li>
+                <li>DR ENC
+                </li>
+                <li>Kim-Teck
+                </li>
+                <li>M-Tech</li>          
+                <li><a href="http://www.newmotech.com/" target="_blank">New Motech</a>
+                </li>
+                <li><a href="http://www.samsungcnt.com/EN/" target="_blank">Samsung</a>
+                </li>
+                <li><a href="http://www.samsung.com/mx/" target="_blank">Samsung Electronics</a>
+                </li>
+                <li>Seah Precision
+                </li>
+                <li>Young Chem
+                </li>
+                <li><a href="#">JY C Tech</a>
+                </li>
+                <li><a href="#">Donga Hwasung</a>
+                </li>    
+              </ul>
+          </div>
+        </div>  
+<!--AUSTRIA-->
+          <div class="tab">
+          <input id="tab-twelve" type="checkbox" name="tabs">
+          <label for="tab-twelve">   <i class="at flag"></i>AUSTRIA</label>
+          <div class="tab-content">
+              <ul>
+                <li><a href="http://www.senoplast.com/" target="_blank">Senoplast</a></li>
+                                          
+              </ul>
+          </div>
+        </div>
+<!--PORTUGAL-->
+          <div class="tab">
+          <input id="tab-thirteen" type="checkbox" name="tabs">
+          <label for="tab-thirteen">   <i class="pt flag"></i>PORTUGAL</label>
+          <div class="tab-content">
+              <ul>
+                <li><a href="http://www.senoplast.com/" target="_blank">Senoplast</a></li>
+                                          
+              </ul>
+          </div>
+        </div>
+<!--ITALIA-->
+          <div class="tab">
+          <input id="tab-fourteen" type="checkbox" name="tabs">
+          <label for="tab-fourteen"><i class="it flag"></i>ITALIA</label>
+          <div class="tab-content">
+              <ul>
+                <li><a href="http://www.brovedani.it/" target="_blank">Brovedani Reme</a>
+                </li>
+                <li><a href="http://www.elica.com/" target="_blank">Elica</a>
+                </li>
+                <li><a href="http://www.mx.eurotranciatura.com/" target="_blank">Eurotranciatura</a>
+                </li>
+                <li>Imm Inox Market
+                </li>
+                <li><a href="http://www.maccaferri-mexico.com/" target="_blank">Maccaferri</a>
+                </li>
+                <li><a href="http://www.tectriu.com/" target="_blank">Tecnostamp Triulzi</a>
+                </li>                          
+              </ul>
+          </div>
+        </div>
+<!--CANADA-->
+          <div class="tab">
+          <input id="tab-fiveteen" type="checkbox" name="tabs">
+          <label for="tab-fiveteen"><i class="ca flag"></i>CANADÁ</label>
+          <div class="tab-content">
+              <ul>
+              <li><a href="http://www.abcgroupinc.com/" target="_blank">ABC Group</a>
+              </li>
+              <li><a href="http://www.brp.com/" target="_blank">BRP</a>
+              </li>
+              <li><a href="http://www.excoeng.com/" target="_blank">Excoeng</a>
+              </li>
+              <li><a href="http://northamericanstamping.com/" target="_blank">Troquelados Quer&eacute;taro</a>
+              </li>
+              <li><a href="http://www.ultramanufacturing.com" target="_blank">Ultra Manufacturing</a>
+              </li>
+              <li><a href="http://www.van-rob.com/" target="_blank">VRK Automotive Systems</a>
+              </li>
+              <li><a href="http://www.windsormoldgroup.com/" target="_blank">Windsor Mold</a>
+              </li>
+              <li><a href="#">Martinrea Honsel</a>
+              </li>
+              <li><a href="#">Aelbers Tool Mold<a href="#">
+              </li>
+              <li><a href="#">PPD Plastics</a>
+              </li>
+              <li><a href="" target="_blank"> CCL  SECURE</a>
+              </li>
+              <li><a href="" target="_blank">EPMP  MEXICO</a>
+              </li>
+              <li><a href="" target="_blank">EMBALAJES WINPACK DE MEXICO</a>
+              </li>
+              <li><a href="" target="_blank">NARMX</a>
+              </li>
+              <li><a href="" target="_blank">PLASMAN</a>
+              </li>
+              <li><a href="" target="_blank">SELECT TOOL  DE MEXICO</a><
+              /li>
+              <li><a href="" target="_blank">VARI-FORM DE MEXICO</a>
+              </li>                      
+              </ul>
+          </div>
+        </div>       
+<!--SUECIA-->
+      <div class="tab">
+          <input id="tab-fiveteen" type="checkbox" name="tabs">
+          <label for="tab-fiveteen"><i class="se flag"></i>SUECIA</label>
+          <div class="tab-content">
+              <ul>
+                <li><a href="#">Hexpol</a>
+                </li>         
+              </ul>
+          </div>
+      </div>
+<!--ESTADOS UNIDOS-->
+         <div class="tab">
+          <input id="tab-sixteen" type="checkbox" name="tabs">
+          <label for="tab-sixteen"><i class="us flag"></i>ESTADOS UNIDOS</label>
+         
+          <div class="tab-content">
+           <div class="col-6">
+              <ul>
+                <li><a href="http://www.olin.com/" target="_blank">A. J. OSTER  -  AJO MEXICO</a>
+                </li>
+                <li><a href="http://www.apextoolgroup.com/" target="_blank">Apex Tool Manufacturing</a> 
+                </li>
+                <li><a href="http://www.aptar.com/" target="_blank">Avery Dennison</a>
+                </li>
+                <li><a href="http://www.averydennison.com/" target="_blank">Avery Dennison Converted </a>
+                </li>
+                <li><a href="http://www.beachmold.com/" target="_blank">Beachmold</a>&nbsp;
+                </li>
+                <li><a href="http://www.bravoenergy.com/" target="_blank">Bravo&nbsp;Energy</a>
+                </li>
+                <li><a href="http://www.crown.com/" target="_blank">CROWN INDUSTRIES  - INDUSTRIAS MONTACARGAS/a>
+                </li>
+                <li><a href="" target="_blank">CHEM TREND COMERCIAL</a>
+                </li>
+                <li><a href="http://www.dow.com/" target="_blank">DOW QUIMICA MEXICANA, ROHM & HASS LATINOAMERICA</a>
+                </li>
+                <li><a href="http://www.eaton.com/Eaton/index.htm" target="_blank">EATON BUSSMAN	</a>
+                </li>
+                <li><a href="http://www.eaton.com/Eaton/index.htm" target="_blank">EATON Controls</a>
+                </li>
+                <li><a href="http://www.eaton.com/Eaton/index.htm" target="_blank">EATON ENTERPRISES</a>
+                </li>
+                <li><a href="http://www.fabri-quilt.com/" target="_blank">Fabri&nbsp;-&nbsp;Quilt&nbsp;</a>
+                </li>
+                <li><a href="http://www.foamfabricatorsinc.com/" target="_blank">FOAM FABRICATORS QUERETAR</a>
+                </li>
+                <li><a href="" target="_blank">FEDERAL MOGUL SP MEXICO</a>
+                </li>
+                <li><a href="" target="_blank">GREENKOTE  IPC</a>
+                </li>
+                <li><a href="#">Gill Indutries</a>
+                </li>
+                <li><a href="http://www.harman.com/EN-US/Pages/Home.aspx" target="_blank">Harman</a>
+                </li>
+                <li><a href="http://www.hines.com/" target="_blank">Hines</a>
+                </li>
+                <li><a href="#">Hexacomb</a>
+                </li>
+                <li><a href= 
+                "http://www.pulsoindustrial.com/index.php/directorio/ubicacion/item/industrial-powder-coatings-de-mexico-s-a-de-c-v" 
+                target="_blank">Industrial Powder Coating </a>
+                </li>
+                <li><a href="http://www.nav-international.com/" target="_blank">INTERNATIONAL PARTS DISTRIBUTION</a>
+                </li>
+                <li><a href="" target="_blank"> JAFRA MANUFACTURING</a>
+                </li>
+                <li><a href="http://www.mpi-int.com/" target="_blank">MPI PRODUCTS DE MEXICO</a>
+                </li>
+                <li><a href="https://www.ppgcoatingsservices.com/" target="_blank">Metokote</a>
+                </li>
+                <li><a href="http://www.narmco.com/locations-queretaro-mexico.html" target="_blank">Narmx</a>
+                </li>
+                <li><a href="http://www.norgren.com/mx/" target="_blank">Norgren Imi Manufacturing</a>
+                </li>
+                <li><a href="" target="_blank"> NASG MEXICO L.L.C.  </a>
+                </li>
+              </ul>
+            </div>
+            </div>  
+            <div class="tab-content">  
+            <div class="col-6">
+              <ul> 
+                <li><a href="http://www.perryequipment.com/" target="_blank">Perry Operations</a>
+                </li>
+                <li><a href="http://www.plencomx.com/" target="_blank">Plenco</a>
+                </li>
+                <li><a href="http://www.preformed.com/" target="_blank">Preformados de México(PLP)</a>
+                </li>
+                <li><a href="#">Phillips Medisize</a>
+                </li>  
+                <li><a href="#">Panduit</a>
+                </li> 
+                <li><a href="" target="_blank"> PECOFACET MEXICO</a>
+                </li>
+                <li><a href="" target="_blank"> PETER-LACKE  MEXICO</a>
+                </li>
+                <li><a href="http://www.rehrigpacific.com/" target="_blank">REHRIGPACIFIC COMPANY</a>
+                </li>
+                <li><a href="http://www.renfro.com/" target="_blank">Renfro</a>
+                </li>
+                <li><a href="#">Ryder</a>
+                </li>
+                <li><a href="http://www.shapecorp.com/" target="_blank">Shape Corp.</a>
+                </li>
+                <li><a href="" target="_blank">SBS  SPECIALTY BOLT & SCREW MEXICO</a>
+                </li>
+                <li><a href="http://www.thermotech.com/" target="_blank">Thermotech</a>
+                </li>
+                <li><a href="http://www.ttd.cc/index.php?intro=skip" target="_blank">Toledo&nbsp;Tool&nbsp;&nbsp;</a>
+                </li>
+                <li><a href="http://www.btdinc.com/" target="_blank">Troqueladora&nbsp;Batesville</a>
+                </li>
+                <li><a href="http://www.trw.com/" target="_blank">TRW</a>
+                </li>
+                <li><a href="http://www.pvla.com/" target="_blank">VALVULAS de  Precisión</a>
+                </li>
+              </ul>
+            </div> 
+        </div>
+        <div style="margin-bottom:40%;"></div> 
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+</section>
+
+
+<!-- End of Features Section -->
+
+	
+
+
+
+	<!--inicia join us CONTACT FORM-->
+    
+    
+    <div class="container">
+    <div style="margin-bottom:5%;"></div>
+      <h2 class="text-center">CONTACTO</h2>
+      <div style="margin-bottom:5%;"></div>
+
+      <p class="text-center"> ¡Contáctanos!, nos interesan tus dudas, en breve te responderemos</p>
+     <div style="margin-bottom:5%;"></div>
+    
+  <form action=>
+  
+  
+
+    <label for="name">Nombre Completo</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="subject">empresa</label>
+    <input type="text" id="subject" name="subject" placeholder="Your last name..">
+
+    <label for="email">empresa</label>
+    <input type="text" id="email" name="email" placeholder="Your last name..">
+
+    <label for="message">Subject</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+    
+	<!--TERMINA join us CONTACT FORM-->
+    
+    
+    
+    
+    
+    
+	<!--inicia mapa-->
+<div>
+   <div class="row">
+      <div class="main_joine_content text-center">
+            <div style="margin-bottom:5%;"></div>
+            <h2>Mapa de localización</h2> 
+             <div style="margin-bottom:5%;"></div>
+            <h6>Ubicación de empresas dentro de PIQ</h6>  
+            <div style="margin-bottom:5%;"></div>
+</div>
+
+<!--inicia frame de mapa-->
+	    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Parque+Industrial+Queretaro,+Santa+Rosa+J%C3%A1uregui,+M%C3%A9xico&amp;aq=1&amp;sll=37.0625,-95.677068&amp;sspn=58.858685,114.169922&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Parque+Industrial&amp;hnear=Santa+Rosa+J%C3%A1uregui,+Quer%C3%A9taro,+Mexico&amp;t=m&amp;fll=20.82448,-100.444908&amp;fspn=0.017228,0.027874&amp;st=107658235038825379151&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=20.82448,-100.444908&amp;spn=0.032089,0.055704&amp;z=14&amp;output=embed"></iframe><br /><p 
+        
+        
+style="text-align:center">
+</p>
+         
+ </div>
+
+
+	<!-- footer Section -->
+	
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row wow zoomIn" data-wow-duration="2s">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="single_footer">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							  <input type="text" class="form-control" placeholder="Search">
+							  <button type="submit" class="submit_btn">Submit</button>
+							</div>
+							
+						</form>
+                        
+                 
+                        
+						<p>Get letest update from trusted sourcs. We don't send spams.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="single_footer text-right">
+						<div class="footer_menu">
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="">Feature</a></li>
+								<li><a href="">Testimonial</a></li>
+								<li><a href="">Download</a></li>
+								<li><a href="">About</a></li>
+								<li><a href="">Subscribe</a></li>
+							</ul>
+						</div>
+						
+						<div class="footer_socail">
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://piq.com.mx&title=Parque Industrial Queretaro=&source=Linkedin" 
+                            onClick="MyWindow=window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://piq.com.mx&title=Parque 
+                            Industrial=&source=Linkedin', 'MyWindow', width=600, height=300); return false;"/> share on linkedin</a>
+						</div>
+					</div>
+				</div>
+                
+                <!--inicia login-->
+                 <title>Login INTRANET</title>
+                 <button><a href="php/intranet.html">INGRESAR A INTRANET</a></button>
+                 
+        
+        
+
+
+         <!--inicia SHARE-->
+         
+         
+                          
+         <!--TERMINA SHARE-->   
+  
+			</div>
+		</div>
+	</footer>
+	
+
+
+	<!-- STRAT SCROLL TO TOP -->
+	
+	<div class="scrollup">
+		<a href="#"><i class="fa fa-chevron-up"></i></a>
+	</div>
+
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script type="text/javascript" src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
+	
+	<script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+	
+	
+	
+	<script type="text/javascript" src="js/jquery-easing/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/wow/wow.min.js"></script>
+</body>
+</html>
