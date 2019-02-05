@@ -1,3 +1,8 @@
+<?php 
+
+	$conexion=mysqli_connect('localhost','root','','vacantes');
+    error_reporting(0);
+ ?>
 <!doctype html>
 <html lang="en">
 
@@ -35,9 +40,59 @@
 
 <body class="bg-light">
 
+<div class="space-30"></div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+    <td>id_vacante</td>
+			<th>Empresa que solicita vacante</th>
+			<th>Puesto</th>
+			<th>Profesion</th>
+            <th>Escolaridad</th>	
+            <th>Edad</th>	
+            <th>Experiencia</th>	
+            <th>Idioma Adicional</th>	
+            <th>Conocimientos</th>		
+            <th>Nombre</th>	
+            <th>Telefono</th>	
+            <th>Correo</th>	
+            <th>Fecha de publicasión</th>	
+    </tr>
+  </thead>
 
+
+  <?php 
+		$sql="SELECT * from tvacantes";
+		$result=mysqli_query($conexion,$sql);
+
+		while($mostrar=mysqli_fetch_array($result)){
+         ?>
+         
+
+         
+  <tbody>
+  <tr>
+			<th><?php echo $mostrar['id_vac'] ?></th>
+			<th><?php echo $mostrar['emp_vac'] ?></th>
+			<th><?php echo $mostrar['puesto'] ?></th>
+			<th><?php echo $mostrar['profesion'] ?></th>
+            <th><?php echo $mostrar['escol'] ?></th>
+            <th><?php echo $mostrar['edad'] ?></th>
+			<th><?php echo $mostrar['exp'] ?></th>
+            <th><?php echo $mostrar['idioma_add'] ?></th>
+            <th><?php echo $mostrar['Conocimientos'] ?></th>
+			<th><?php echo $mostrar['nom'] ?></th>
+			<th><?php echo $mostrar['tel'] ?></th>
+			<th><?php echo $mostrar['correo'] ?></th>
+			<th><?php echo $mostrar['add_date'] ?></th>
+		</tr>
+	<?php 
+	}
+	 ?>
+  </tbody>
+</table>
  
-        <div class="space-200"></div>
+        <div class="space-100"></div>
         <div class="text-center">
                 <div style="padding-bottom:5%;"></div>
                <div style="padding-bottom:5%;"></div>

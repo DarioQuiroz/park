@@ -1,3 +1,14 @@
+<?php 
+session_start();
+error_reporting(0);
+$varsesion = $_SESSION['usuario'];
+if($varsesion==null || $varsesion='')
+{
+    echo'usted no tiene autorizacion';
+    header("location:login.html");
+die();
+  }
+?>
 <!doctype html>
 <html lang="en">
 
@@ -37,7 +48,7 @@
 </head>
 
 <body class="text-center">
-
+    <h1>Bienvenido: <?php echo $_SESSION ['usuario']  ?> </h1>
 
     <section class="container">
         <div class="row ">
@@ -83,12 +94,13 @@
                     </div>
                 </div>
                 <button type="button" class="btn btn-primary" style="background-color:#3C3CFF">Subir archivos</button>
+                <button type="button" class="btn btn-primary" style="background-color:#3C3CFF"> <a href="cerrarsesion.php">Cerrar sesion</a> </button>
             </form>
             <div class="col-4"></div>
         </div>
     </section>
     <div class="space-200"></div>
-<section><center>
+<section>
 
 
         <table width="80%" border="0">
