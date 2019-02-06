@@ -1594,8 +1594,8 @@ section > button:hover {
   margin-right: auto;
 }
 #formulario{
-  display: none;
+  display: block;
 }
 #validar{
-  display: none;
+  display: block;
 }
