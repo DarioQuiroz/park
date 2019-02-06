@@ -39,51 +39,45 @@
 </head>
 
 <body class="bg-light">
+<button style="align:" class="btn btn-lg button-registrarvacante btn-block" type="submit"><a href="login.html">Registrar vacante</a></button>
+<div class="space-30"></div>
 
 <div class="space-30"></div>
+
 <table class="table">
   <thead class="thead-dark">
     <tr>
+
     <td>id_vacante</td>
 			<th>Empresa que solicita vacante</th>
 			<th>Puesto</th>
-			<th>Profesion</th>
-            <th>Escolaridad</th>	
-            <th>Edad</th>	
+			<th>Perfil</th>
             <th>Experiencia</th>	
-            <th>Idioma Adicional</th>	
-            <th>Conocimientos</th>		
-            <th>Nombre</th>	
+            <th>Idiomas</th>	
+            <th>Nombre (contacto)</th>	
             <th>Telefono</th>	
             <th>Correo</th>	
             <th>Fecha de publicasión</th>	
     </tr>
   </thead>
-
-
   <?php 
-		$sql="SELECT * from tvacantes";
+        $sql="SELECT * from tvacantes";
 		$result=mysqli_query($conexion,$sql);
 
 		while($mostrar=mysqli_fetch_array($result)){
          ?>
          
-
-         
   <tbody>
   <tr>
 			<th><?php echo $mostrar['id_vac'] ?></th>
 			<th><?php echo $mostrar['emp_vac'] ?></th>
-			<th><?php echo $mostrar['puesto'] ?></th>
-			<th><?php echo $mostrar['profesion'] ?></th>
-            <th><?php echo $mostrar['escol'] ?></th>
-            <th><?php echo $mostrar['edad'] ?></th>
-			<th><?php echo $mostrar['exp'] ?></th>
+            <th><?php echo $mostrar['puesto'] ?></th>
+			<th><?php echo $mostrar['Perfil_puesto'] ?></th>
+			<th><?php echo $mostrar['expe'] ?></th>
             <th><?php echo $mostrar['idioma_add'] ?></th>
-            <th><?php echo $mostrar['Conocimientos'] ?></th>
-			<th><?php echo $mostrar['nom'] ?></th>
+            <th><?php echo $mostrar['nom'] ?></th>
 			<th><?php echo $mostrar['tel'] ?></th>
-			<th><?php echo $mostrar['correo'] ?></th>
+            <th><?php echo $mostrar['correo'] ?></th>
 			<th><?php echo $mostrar['add_date'] ?></th>
 		</tr>
 	<?php 
@@ -93,200 +87,8 @@
 </table>
  
         <div class="space-100"></div>
-        <div class="text-center">
-                <div style="padding-bottom:5%;"></div>
-               <div style="padding-bottom:5%;"></div>
-             
-               <button id="mostrar" class="button-disponibilidad center-block" onclick="mostrarvalidar() "> Subir Una Vacante</button>
-               <div style="padding-bottom:10%;"></div>
-             </div>
-             <section id="validar" class="container">
-                <div class="row ">
-                    <div class="col-4"></div>   
-                    <form class="form-signin col-4">
-                       
-                        <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
-                        <label for="inputEmail" class="sr-only">Ingresar correo</label>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required autofocus>
-                        <label for="inputPassword" class="sr-only">Contraseña</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-                        <div class="space-20"></div>
-                        <div class="checkbox mb-3">
-                           <input id="checkbox-1" type="checkbox" value="remember-me"> <p>Recordarme</p>
-                           
-                          </div>
-            <button class="btn btn-lg button-disponibilidad btn-block" type="submit"  onclick="ocultarvalidar(); mostrarformulario()"><a>Validar</a></button>
-           
-            
-                    </form>   
-                    <div class="col-4"></div> 
-               </div>
-             </section>
+        
 
-     
-    <div id="formulario" class="container">
-        <h4 class="mb-12">Registra tu vacante</h4>
-        <div class="row">
-            
-            <div class="col-md-6 order-md-1">
-                
-                <form class="needs-validation" novalidate>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Nombre de la empresa</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Puesto</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Profesión</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Escolaridad</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Edad</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Ingles</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Experiencia</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-
-                    <hr class="mb-4">
-                    
-                </form>
-            </div>
-            <div class="col-md-6 order-md-1">
-                <form class="needs-validation" novalidate>
-                    
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Observacion</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Otro idioma</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Conocimientos</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Contactame (Nombre)</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Contactame (Telefono)</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">Contactame (Email)</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr class="mb-4">
-                    
-                </form>
-            </div>
-            
-        </div>
-
-        <div class="text-center">
-            <div style="padding-bottom:5%;"></div>
-           <div style="padding-bottom:5%;"></div>
-         
-           <button class="button-disponibilidad" onclick="ocultartodo()">Subir Vacante</button>
-           <div style="padding-bottom:10%;"></div>
-         </div>
-         
-   
-</div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>

@@ -3,20 +3,20 @@ session_start();
 $usuario=$_POST['usuario'];
 $clave=$_POST['clave'];
 $_SESSION['usuario']=$usuario;
-$conexion=mysqli_connect("localhost","root","","pruebadesesion");
-$consulta="SELECT * FROM usuario where usuario='$usuario' and contra='$clave'";
+$conexion=mysqli_connect("localhost","root","","vacantes");
+$consulta="SELECT * FROM usuarios where correo='$usuario' and clave='$clave'";
 $resultado=mysqli_query($conexion, $consulta);
 
 $filas=mysqli_num_rows($resultado);
 if ($filas>0)
 {
-    header("location:subirarch.php");
+    header("location:subirvacante.php");
 
   }
   else
   {
 
-    header("location:login.html");
+    header("location:segundo.html");
 
   }
   mysqli_free_result($resultado);
