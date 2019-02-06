@@ -1,6 +1,6 @@
 <?php 
-include('conexionvacante.php');
-if (isset($_POST['insertar'])) {
+include 'conexionvacante.php';
+//if (isset($_POST['insertar'])) {
 $empresa=$_POST['emp_vac'];
 $puesto=$_POST['puesto'];
 $perfil=$_POST['Perfil_puesto'];
@@ -11,8 +11,8 @@ $telefono=$_POST['tel'];
 $correo=$_POST['correo'];
 
 
-$peticion="INSERT INTO tvacantes (emp_vac,puesto,Perfil_puesto,expe,idioma_add,nom,tel,correo) 
-VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+$insertar="INSERT INTO tvacantes (emp_vac,puesto,Perfil_puesto,expe,idioma_add,nom,tel,correo) 
+VALUES ('$empresa','$puesto','$perfil','$experiencia','$idiomas','$nombre', '$telefono', '$correo')";
 
 $stmt = $conn->prepare($peticion);
 $stmt->bind_param($empresa, $puesto, $perfil, $experiencia, $idiomas, $nombre, $telefono, $correo);
@@ -21,5 +21,5 @@ $stmt->close();
 
 echo "Registro Insertado";
 $conn->close();
-}
+s
 ?>
