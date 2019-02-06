@@ -46,10 +46,13 @@
     <tr>
     <td>id_vacante</td>
 			<th>Empresa que solicita vacante</th>
-			<th>Puesto solicitado </th>
-			<th>Perfil del puesto</th>
-            <th>Experiencia</th>		
-            <th>Idioma Adicional</th>			
+			<th>Puesto</th>
+			<th>Profesion</th>
+            <th>Escolaridad</th>	
+            <th>Edad</th>	
+            <th>Experiencia</th>	
+            <th>Idioma Adicional</th>	
+            <th>Conocimientos</th>		
             <th>Nombre</th>	
             <th>Telefono</th>	
             <th>Correo</th>	
@@ -72,10 +75,13 @@
 			<th><?php echo $mostrar['id_vac'] ?></th>
 			<th><?php echo $mostrar['emp_vac'] ?></th>
 			<th><?php echo $mostrar['puesto'] ?></th>
-			<th><?php echo $mostrar['Perfil_puesto'] ?></th>
+			<th><?php echo $mostrar['profesion'] ?></th>
+            <th><?php echo $mostrar['escol'] ?></th>
+            <th><?php echo $mostrar['edad'] ?></th>
 			<th><?php echo $mostrar['exp'] ?></th>
             <th><?php echo $mostrar['idioma_add'] ?></th>
-            <th><?php echo $mostrar['nom'] ?></th>
+            <th><?php echo $mostrar['Conocimientos'] ?></th>
+			<th><?php echo $mostrar['nom'] ?></th>
 			<th><?php echo $mostrar['tel'] ?></th>
 			<th><?php echo $mostrar['correo'] ?></th>
 			<th><?php echo $mostrar['add_date'] ?></th>
@@ -116,7 +122,8 @@
                     <div class="col-4"></div> 
                </div>
              </section>
-    <form action="insertarvacante.php" method="post">
+
+     
     <div id="formulario" class="container">
         <h4 class="mb-12">Registra tu vacante</h4>
         <div class="row">
@@ -127,7 +134,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Nombre de la empresa</label>
-                            <input type="text" class="form-control" id="empresa" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -136,7 +143,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Puesto</label>
-                            <input type="text" class="form-control" id="puesto" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -144,8 +151,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Perfil del puesto</label>
-                            <input type="text" class="form-control" id="perfil_del_puesto" placeholder="" value="" required>
+                            <label for="firstName">Profesión</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -154,14 +161,42 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Experiencia</label>
-                            <input type="text" class="form-control" id="experiencia" placeholder="" value="" required>
+                            <label for="firstName">Escolaridad</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
                         </div>
                     </div>
-     
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Edad</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Ingles</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Experiencia</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
 
                     <hr class="mb-4">
                     
@@ -172,8 +207,8 @@
                     
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Idiomas</label>
-                            <input type="text" class="form-control" id="idiomas" placeholder="" value="" required>
+                            <label for="firstName">Observacion</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -181,8 +216,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Nombre de contacto</label>
-                            <input type="text" class="form-control" id="contacto" placeholder="" value="" required>
+                            <label for="firstName">Otro idioma</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -190,8 +225,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Correo</label>
-                            <input type="text" class="form-control" id="cooreo" placeholder="" value="" required>
+                            <label for="firstName">Conocimientos</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -199,16 +234,40 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Telefono</label>
-                            <input type="text" class="form-control" id="telefono" placeholder="" value="" required>
+                            <label for="firstName">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
                         </div>
                     </div>
-
-
-
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Contactame (Nombre)</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Contactame (Telefono)</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Contactame (Email)</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
 
                     <hr class="mb-4">
                     
@@ -221,10 +280,10 @@
             <div style="padding-bottom:5%;"></div>
            <div style="padding-bottom:5%;"></div>
          
-           <button class="button-disponibilidad" name="insertar">Subir Vacante</button>
+           <button class="button-disponibilidad" onclick="ocultartodo()">Subir Vacante</button>
            <div style="padding-bottom:10%;"></div>
          </div>
-         </form>
+         
    
 </div>
     </div>
