@@ -1,7 +1,15 @@
+Hola <?php echo htmlspecialchars($_POST['nombre']); ?>.
+Usted tiene <?php echo (int)$_POST['edad']; ?> años.
+
+
+
 <?php 
 include 'conexionvacante.php';
-/*
-$empresa= $_POST['emp_vac'];
+
+
+
+
+$empresa= $_POST['nombre'];
 $puesto=$_POST['puesto'];
 $perfil=$_POST['Perfil_puesto'];
 $experiencia=$_POST['expe'];
@@ -11,7 +19,7 @@ $telefono=$_POST['tel'];
 $correo=$_POST['correo'];
 
 echo  $empresa;
-*/
+
 $insertar="INSERT INTO tvacantes (`emp_vac`, `puesto`, `Perfil_puesto`, `expe`, `idioma_add`, `nom`, `tel`, `correo`, `add_date`, `rfc`) VALUES ('Dario', 'REWT', 'ERTYHRRTY', 'RTEHTH', 'WERT', 'WRTHGE', 'DFGH', 'DFGH', '2019-02-28', 'DSHFJG')";
 
 $resultado=mysqli_query($conn, $insertar);
