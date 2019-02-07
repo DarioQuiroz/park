@@ -99,28 +99,20 @@ $name = $_POST['name'];
 </table>
     <div class="space-50"></div>
 
- <form action="">
-    <div class="row">
-        <div  class="col-md-6 order-md-1">
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <p>Su nombre: <input type="text" name="nombre" /></p>
-            </div>
-        </div>
-     </div>
-     <hr class="mb-4">
-
-     <div  class="col-md-6 order-md-1">
-         <div class="row">
-          <div class="col-md-4 mb-3">
-             <p>Su edad: <input type="text" name="edad" /></p>
-            </div>
-          </div>
+    <form action="insertarvacante.php" method="post">
+ <p>Empresa: <input type="text" name="empresa" /></p>
+ <p>Puesto: <input type="text" name="puesto" /></p>
+ <p>Perfil: <input type="text" name="perfil" /></p>
+ <p>Experiencia: <input type="text" name="experiencia" /></p>
+ <p>Idiomas: <input type="text" name="idioma" /></p>
+ <p>Nombre(contacto): <input type="text" name="nombre" /></p>
+ <p>Telefono: <input type="text" name="telefono" /></p>
+ <p>Correo: <input type="text" name="correo" /></p>
+ <p>RFC: <input type="text" name="rfc" /></p>
+ <div class="text-center">
+ <p><input type="submit" class="btn btn-lg button-disponibilidad btn-block"/></p>
         </div>
 
- 
- <p><input type="submit" /></p>
- </div>
 </form>
 
 

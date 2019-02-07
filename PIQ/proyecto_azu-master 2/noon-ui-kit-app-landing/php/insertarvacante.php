@@ -5,22 +5,28 @@ Usted tiene <?php echo (int)$_POST['edad']; ?> años.
 
 <?php 
 include 'conexionvacante.php';
-
-
-
-
 $empresa= $_POST['nombre'];
 $puesto=$_POST['puesto'];
-$perfil=$_POST['Perfil_puesto'];
-$experiencia=$_POST['expe'];
-$idiomas=$_POST['idioma_add'];
-$nombre=$_POST['nom'];
-$telefono=$_POST['tel'];
+$perfil=$_POST['perfil'];
+$experiencia=$_POST['experiencia'];
+$idiomas=$_POST['idioma'];
+$nombre=$_POST['nombre'];
+$telefono=$_POST['telefono'];
 $correo=$_POST['correo'];
+$rfc=$_POST['rfc'];
 
 echo  $empresa;
+echo  $puesto;
+echo  $perfil;
+echo  $experiencia;
+echo  $idiomas;
+echo  $nombre;
+echo  $empresa;
+echo  $telefono;
+echo  $correo;
 
-$insertar="INSERT INTO tvacantes (`emp_vac`, `puesto`, `Perfil_puesto`, `expe`, `idioma_add`, `nom`, `tel`, `correo`, `add_date`, `rfc`) VALUES ('Dario', 'REWT', 'ERTYHRRTY', 'RTEHTH', 'WERT', 'WRTHGE', 'DFGH', 'DFGH', '2019-02-28', 'DSHFJG')";
+$insertar="INSERT INTO tvacantes (`emp_vac`, `puesto`, `Perfil_puesto`, `expe`, `idioma_add`, `nom`, `tel`, `correo`, `rfc`) VALUES 
+('$empresa', '$puesto', '$perfil', '$experiencia', '$idiomas', '$nombre', '$telefono', '$correo','$rfc')";
 
 $resultado=mysqli_query($conn, $insertar);
 if(!$resultado)
