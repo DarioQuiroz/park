@@ -3,107 +3,33 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 <div id="formulario" class="container" action="insertarvacante.php" method="post">
-    <form action="">
-        <h4 class="mb-12">Registra tu vacante</h4>
+    
+<form action="insertarvacante.php" method="post">
         <div class="row">
-            <div class="col-md-6 order-md-1">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="emp_vac">Nombre de la empresa</label>
-                        <input type="text" class="form-control" name="emp_vac" id="emp_vac" placeholder="" value=""
-                            required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div clas="row">
+                    <div class="form-group">
+                            <p>Empresa: <input type="text" name="empresa" /></p>
+                        <p>Puesto: <input type="text" name="puesto" /></p>
+                        <p>Perfil: <input type="text" name="perfil" /></p>
+                        <p>Experiencia: <input type="text" name="experiencia" /></p>
+                        <p>Idiomas: <input type="text" name="idioma" /></p>                       
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="puesto">Puesto</label>
-                        <input type="text" class="form-control" name="puesto" id="puesto" placeholder="" value=""
-                            required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="Perfil_puesto">Perfil del puesto</label>
-                        <input type="text" class="form-control" name="Perfil_puesto" id="Perfil_puesto" placeholder=""
-                            value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="expe">Experiencia</label>
-                        <input type="text" class="form-control" id="expe" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-                <hr class="mb-4">
-
-
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div clas="row"></div>
+              <div class="form-group">
+                  <p>Nombre(contacto): <input type="text" name="nombre" /></p>
+                  <p>Telefono: <input type="text" name="telefono" /></p>
+                  <p>Correo: <input type="text" name="correo" /></p>
+                  <p>RFC: <input type="text" name="rfc" /></p>
+                  <p>Fecha: <input type="date" name="fecha" /></p>
+             </div>
             </div>
-            <div class="col-md-6 order-md-1">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="idioma_add">Idiomas</label>
-                        <input type="text" class="form-control" id="idioma_add" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="nom">Nombre</label>
-                        <input type="text" class="form-control" id="nom" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="tel">Telefono</label>
-                        <input type="text" class="form-control" id="tel" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="correo">Correo</label>
-                        <input type="text" class="form-control" id="correo" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="mb-4">
-            </div>
-
+          </div>
         </div>
-
-
-        <div class="text-center">
-            <div style="padding-bottom:5%;"></div>
-            <div style="padding-bottom:5%;"></div>
-
-            <button class="btn btn-lg button-disponibilidad btn-block" type="submit"><a href="insertarvacante.php">Registrar
-                    vacante</a></button>
-            <div style="padding-bottom:10%;"></div>
-        </div>
-
-    </form>
+</form>
 
 </div>

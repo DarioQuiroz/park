@@ -10,13 +10,14 @@ $resultado=mysqli_query($conexion, $consulta);
 $filas=mysqli_num_rows($resultado);
 if ($filas>0)
 {
-    header("location:subirvacante.php");
+ 
+    header("location:login.php");
 
   }
   else
   {
 
-    header("location:segundo.html");
+    header("location:subirvacante.php");
 
   }
   mysqli_free_result($resultado);

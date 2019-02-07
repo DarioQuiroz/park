@@ -904,7 +904,7 @@ label {
  
 form {
     margin:0 auto;
-    width:400px;
+    width:900px;
 }
  
 input, textarea {
@@ -1579,7 +1579,7 @@ section > button:hover {
 
 .form-control {
   
-  width: 230%;
+  width: 100%;
 }
 .button-disponibilidad {
   height: 50px;
@@ -1599,9 +1599,9 @@ section > button:hover {
 #validar{
   display: block;
 }
-#registro .registro{
+#registro {
   display: block;
-  background-color: black;
+  
   color: black;
 }
 .button-registrarvacante {
@@ -1614,4 +1614,13 @@ section > button:hover {
   padding: 0 30px 0 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#tam_grande form{
+  width: 700px;
+  width:900px;
+
+}
+.columna{
+  margin: 5%;
 }

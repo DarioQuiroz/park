@@ -39,7 +39,8 @@
 </head>
 
 <body class="bg-light">
-<button style="align:" class="btn btn-lg button-registrarvacante btn-block" type="submit"><a href="login.html">Registrar vacante</a></button>
+<div class="space-30"></div>
+<button style="align:" class="btn btn-lg button-registrarvacante btn-block" type="submit"><a href="login.php">Registrar vacante</a></button>
 <div class="space-30"></div>
 
 <div class="space-30"></div>

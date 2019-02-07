@@ -1,7 +1,11 @@
- <?php 
+
+
+
+<?php 
 $conexion=mysqli_connect('localhost','root','','vacantes');
 error_reporting(0);
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +15,14 @@ error_reporting(0);
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.8.5">
 <title>Checkout example · Bootstrap</title>
+
+
+<script>
+    function modificar(id){
+        alert (id);
+        window.location="../php/modificarvacante.php?id="+id
+    }
+    </script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
@@ -35,17 +47,64 @@ error_reporting(0);
 <link href="form-validation.css" rel="stylesheet">
 </head>
 <body class="bg-light">
+
+<div class="space-40"></div>
+
+<section id="tamaño_grande">
+
+
+<form action="insertarvacante.php" id="tam_complete" method="post" >
+  <div class="row">
+    <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
+        <a>Empresa: </a>
+      <input type="text" class="formulariovacante" name="empresa">
+      <a>Puesto: </a>
+      <input type="text" class="formulariovacante" name="puesto" />
+      <a>Perfil: </a>
+      <input type="text" class="formulariovacante" name="perfil" />
+     <a>Experiencia: </a>
+     <input type="text" class="formulariovacante" name="experiencia" />
+     <a>Idiomas: </a>     
+     <input type="text" class="formulariovacante" name="idioma" />
+    </div>
+    <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <a>Nombre(contacto): </a>
+          <input type="text" class="formulariovacante" name="nombre" />
+         <a>Telefono: </a>
+         <input type="text" class="formulariovacante" name="telefono" />
+         <a>Correo: </a>
+         <input type="email" class="formulariovacante" name="correo" />
+         <a>RFC: </a>
+         <input type="text" class="formulariovacante" name="rfc" />
+         <a>Fecha:</a>
+         <input type="date" class="formulariovacante" name="fecha" />
+
+
+
+    </div>
+  </div>
+  <div class="space-20"></div>
+  <div class="text-center">
+            <p><input type="submit" class="btn btn-lg button-disponibilidad btn-block" value="Registrar"/></p>
+            </div>
+</form>
+
+
+</section>   
+           
+
+
 <?php
  
 if(isset($_POST['submit'])){
 $name = $_POST['name'];
 }?>
-<section class="container">
+<section class="container" style="float:rigth; align: right;">
       <div class="row ">
-          <div class="col-4"></div>   
+          <div class="col-md-8 col-md-offset-2"></div>   
           <form method="post" class="form-signin col-4" > 
              
-              <h3 class="h3 mb-3 font-weight-normal" >Ingresa tu RFC para acceder a tus vacantes</h3>
+              <p class="h3 mb-3 font-weight-normal" >Ingresa tu RFC para acceder a tus vacantes</p>
               
               <input  type="text" name="name" class="form-control" placeholder="RFC" required>
               <div class="space-20"></div>
@@ -91,31 +150,23 @@ $name = $_POST['name'];
         <th><?php echo $mostrar['tel'] ?></th>
         <th><?php echo $mostrar['correo'] ?></th>
         <th><?php echo $mostrar['add_date'] ?></th>
+        <th>  <a onclick="modificar(<?php echo $mostrar['id_vac'] ?>)"> <button type='button' class='btn btn-success'>Modificar</button> </a> </th>
+        <th>  <a href=""> <button type='button' class='btn btn-danger'>Elimiar</button> </a> </th>
+
+
     </tr>
 <?php 
 }
  ?>
 </tbody>
 </table>
-    <div class="space-50"></div>
+   
 
-    <form action="insertarvacante.php" method="post">
- <p>Empresa: <input type="text" name="empresa" /></p>
- <p>Puesto: <input type="text" name="puesto" /></p>
- <p>Perfil: <input type="text" name="perfil" /></p>
- <p>Experiencia: <input type="text" name="experiencia" /></p>
- <p>Idiomas: <input type="text" name="idioma" /></p>
- <p>Nombre(contacto): <input type="text" name="nombre" /></p>
- <p>Telefono: <input type="text" name="telefono" /></p>
- <p>Correo: <input type="text" name="correo" /></p>
- <p>RFC: <input type="text" name="rfc" /></p>
- <div class="text-center">
- <p><input type="submit" class="btn btn-lg button-disponibilidad btn-block"/></p>
+<div class="text-center">
+        <a href="cerrarsesion.php">Cerrar sesion</a>
         </div>
 
-</form>
-
-
+        
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
