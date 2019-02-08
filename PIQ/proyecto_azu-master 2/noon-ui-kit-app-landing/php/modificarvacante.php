@@ -1,4 +1,31 @@
-    <!DOCTYPE html>
+<?php
+        $cod=$_GET["id_vac"];
+        $resultado = mysqli_query($conexion,"SELECT * FROM tvacantes WHERE id = '$cod'");
+  while($consulta = mysqli_fetch_array($resultado))
+  {
+    $variable=$consulta['campo_mysql'];
+  }
+
+       
+$filas=mysqli_num_rows($resultado);
+if ($filas>0)
+{
+ 
+    header("location:login.php");
+
+  }
+  else
+  {
+
+    header("location:segundo.php");
+
+  }
+  mysqli_free_result($resultado);
+  mysqli_close($conexion);
+
+ ?>  
+  
+  <!DOCTYPE html>
 <html lang="es">  
   <head>    
     <title>Título de la WEB</title>    
@@ -12,26 +39,17 @@
     <link href="http://dominio.com/hoja-de-estilos.css" rel="stylesheet" type="text/css"/>    
   </head>  
   <body class="text-center">
-        <?php>
-        $cod=$_GET["parametro"];
-        require 'conexionvacante.php';
-        $sql="SELECT * from tvacantes where id_vac='$cod'";
-        $result=mysqli_query($conexion,$sql);
-        echo '$result';
     
-        ?>
 <link rel="stylesheet" href="../css/space.css"/>
 <link rel="stylesheet" href="../css/style.css"/>
 <h2>Modificar Datos de la Vacante</h2>
 <form action="insertarvacante.php" id="tam_complete" method="post" >
   <div class="row">
 
-  <?php
-  foreach($result as $fila){
-      ?>
+
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
         <a>Empresa: </a>
-      <input type="text" class="formulariovacante" name="empresa" value="<?php echo $fila["emp_vac"]; ?>">
+      <input type="text" class="formulariovacante" name="empresa" value="">
       <a>Puesto: </a>
       <input type="text" class="formulariovacante" name="puesto" />
       <a>Perfil: </a>
@@ -56,8 +74,7 @@
 
 
     </div>
-    <?php}
-    ?>
+    
   </div>
   <div class="space-20"></div>
   <div class="text-center">
