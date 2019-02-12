@@ -1,6 +1,6 @@
 <?php 
 include 'conexionvacante.php';
-$empresa= $_POST['nombre'];
+$empresa= $_POST['empresa'];
 $puesto=$_POST['puesto'];
 $perfil=$_POST['perfil'];
 $experiencia=$_POST['experiencia'];

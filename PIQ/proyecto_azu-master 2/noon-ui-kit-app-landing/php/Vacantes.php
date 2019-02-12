@@ -69,6 +69,7 @@
          ?>
          
   <tbody>
+  
   <tr>
 			<th><?php echo $mostrar['id_vac'] ?></th>
 			<th><?php echo $mostrar['emp_vac'] ?></th>
@@ -80,6 +81,7 @@
 			<th><?php echo $mostrar['tel'] ?></th>
             <th><?php echo $mostrar['correo'] ?></th>
 			<th><?php echo $mostrar['add_date'] ?></th>
+           
 		</tr>
 	<?php 
 	}

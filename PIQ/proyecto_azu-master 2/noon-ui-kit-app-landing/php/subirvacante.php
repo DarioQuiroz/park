@@ -20,7 +20,7 @@ error_reporting(0);
 <script>
     function modificar(id){
         alert (id);
-        window.location="../php/modificarvacante.php?id="+id
+        window.location="../php/subirvacante.php?id="+id
     }
     </script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -57,7 +57,7 @@ error_reporting(0);
   <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
         <a>Empresa: </a>
-      <input type="text" class="formulariovacante" name="empresa">
+      <input type="text" class="formulariovacante" name="empresa" id="empresa">
       <a>Puesto: </a>
       <input type="text" class="formulariovacante" name="puesto" />
       <a>Perfil: </a>
@@ -139,8 +139,9 @@ $name = $_POST['name'];
     while($mostrar=mysqli_fetch_array($result)){
      ?>
 <tbody>
+<form method="POST" action="subirvacante.php" >
 <tr>
-        <th><?php echo $mostrar['id_vac'] ?></th>
+        <th id="llave"><?php echo $mostrar['id_vac'] ?></th>
         <th><?php echo $mostrar['emp_vac'] ?></th>
         <th><?php echo $mostrar['puesto'] ?></th>
         <th><?php echo $mostrar['Perfil_puesto'] ?></th>
@@ -150,14 +151,29 @@ $name = $_POST['name'];
         <th><?php echo $mostrar['tel'] ?></th>
         <th><?php echo $mostrar['correo'] ?></th>
         <th><?php echo $mostrar['add_date'] ?></th>
-        <th>  <a onclick="modificar(<?php echo $mostrar['id_vac'] ?>)"> <button type='button' class='btn btn-success'>Modificar</button> </a> </th>
-        <th>  <a href=""> <button type='button' class='btn btn-danger'>Elimiar</button> </a> </th>
-
-
+        <th>  <a > <button type='submit' class='btn btn-success' id="modificar">Modificar</button> </a> </th>
+        <th>  <a> <button type='button' class='btn btn-danger'>Elimiar</button> </a> </th>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['id_vac'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['emp_vac'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['puesto'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['Perfil_puesto'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['expe'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['idioma_add'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['nom'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['tel'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['correo'] ?>"/>
+        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['add_date'] ?>"/>
+       
     </tr>
+    </form>
 <?php 
 }
  ?>
+
+ <section id="modificacion">
+
+ </section>
+
 </tbody>
 </table>
    
