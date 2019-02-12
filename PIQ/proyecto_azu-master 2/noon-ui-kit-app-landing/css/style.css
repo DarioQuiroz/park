@@ -1624,3 +1624,9 @@ section > button:hover {
 .columna{
   margin: 5%;
 }
+
+#ident .ident{
+ 
+  width: 38px; 
+  height: 15px;
+}

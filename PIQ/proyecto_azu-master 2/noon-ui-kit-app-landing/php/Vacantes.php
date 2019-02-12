@@ -49,7 +49,7 @@
   <thead class="thead-dark">
     <tr>
 
-    <td>id_vacante</td>
+    <th>id_vacante</th>
 			<th>Empresa que solicita vacante</th>
 			<th>Puesto</th>
 			<th>Perfil</th>

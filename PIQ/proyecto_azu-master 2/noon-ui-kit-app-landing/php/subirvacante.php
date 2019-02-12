@@ -1,6 +1,4 @@
 
-
-
 <?php 
 $conexion=mysqli_connect('localhost','root','','vacantes');
 error_reporting(0);
@@ -109,7 +107,7 @@ $name = $_POST['name'];
               <input  type="text" name="name" class="form-control" placeholder="RFC" required>
               <div class="space-20"></div>
              
-  <button class="btn btn-lg button-disponibilidad btn-block" type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
+  <button class="btn btn-lg button-disponibilidad btn-block"  type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
   
           </form>   
           <div class="col-4"></div> 
@@ -117,7 +115,7 @@ $name = $_POST['name'];
    </section>
             
 
-<div class="space-30"></div>
+<div id="vacs" class="space-30"></div>
 <table class="table">
 <thead class="thead-dark">
 <tr>
@@ -137,38 +135,36 @@ $name = $_POST['name'];
     $sql="SELECT * from tvacantes WHERE rfc='$name' ";
     $result=mysqli_query($conexion,$sql);
     while($mostrar=mysqli_fetch_array($result)){
+
+
+        echo "<tr>";
+        echo "<th>"; echo $mostrar['id_vac']; echo "</th>";
+        echo "<th>"; echo $mostrar['emp_vac']; echo "</th>";
+        echo "<th>"; echo $mostrar['puesto']; echo "</th>";
+        echo "<th>"; echo $mostrar['Perfil_puesto']; echo "</th>";
+        echo "<th>"; echo $mostrar['expe']; echo "</th>";
+        echo "<th>"; echo $mostrar['idioma_add']; echo "</th>";
+        echo "<th>"; echo $mostrar['nom']; echo "</th>";
+        
+        echo "<th>"; echo $mostrar['tel']; echo "</th>";
+        echo "<th>"; echo $mostrar['correo']; echo "</th>";
+        echo "<th>"; echo $mostrar['add_date']; echo "</th>";
+        echo "<th>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class='btn btn-success'>Modificar</button> </a> </th>";
+        echo "<th> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </th>";
+      echo "</tr>";
      ?>
 <tbody>
-<form method="POST" action="subirvacante.php" >
-<tr>
-        <th id="llave"><?php echo $mostrar['id_vac'] ?></th>
-        <th><?php echo $mostrar['emp_vac'] ?></th>
-        <th><?php echo $mostrar['puesto'] ?></th>
-        <th><?php echo $mostrar['Perfil_puesto'] ?></th>
-        <th><?php echo $mostrar['expe'] ?></th>
-        <th><?php echo $mostrar['idioma_add'] ?></th>
-        <th><?php echo $mostrar['nom'] ?></th>
-        <th><?php echo $mostrar['tel'] ?></th>
-        <th><?php echo $mostrar['correo'] ?></th>
-        <th><?php echo $mostrar['add_date'] ?></th>
-        <th>  <a > <button type='submit' class='btn btn-success' id="modificar">Modificar</button> </a> </th>
-        <th>  <a> <button type='button' class='btn btn-danger'>Elimiar</button> </a> </th>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['id_vac'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['emp_vac'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['puesto'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['Perfil_puesto'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['expe'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['idioma_add'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['nom'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['tel'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['correo'] ?>"/>
-        <input type="text" class="formulariovacante" name="nombre"  value="<?php echo $mostrar['add_date'] ?>"/>
-       
-    </tr>
-    </form>
+
+
+
+
+  
+
 <?php 
+
 }
  ?>
+    
 
  <section id="modificacion">
 
