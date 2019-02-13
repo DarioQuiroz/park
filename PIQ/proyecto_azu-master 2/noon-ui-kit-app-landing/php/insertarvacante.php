@@ -28,11 +28,11 @@ $insertar="INSERT INTO tvacantes (`emp_vac`, `puesto`, `Perfil_puesto`, `expe`, 
 
 $resultado=mysqli_query($conn, $insertar);
 if(!$resultado)
-{ header("location:insertarvacante.php");
+{ header("location:subirvacante.php");
     echo "error al registar";
 }
 else{
-    header("location:insertarvacante.php");
+    header("location:subirvacante.php");
     echo "usuario registrado";
 
 }

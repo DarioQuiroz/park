@@ -25,8 +25,6 @@ fecha=document.getElementById("fecha").value;
     return false;
     }
 
-  
-
 }
 
 function validar_usuario() {
