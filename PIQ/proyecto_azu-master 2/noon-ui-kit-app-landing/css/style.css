@@ -1639,3 +1639,17 @@ section #tamaño_grande {
 #inst{
   text-align: center;
 }
+
+
+.Registrarvac {
+  width: 38px; 
+  width: 30%; 
+  background-color: #3C3CFF;
+  color: #0E98EF;
+  border-radius: 10px;
+  border: none;
+  padding: 0 30px 0 30px;
+
+  margin-left: 25%;
+  margin-right: 25%;
+}

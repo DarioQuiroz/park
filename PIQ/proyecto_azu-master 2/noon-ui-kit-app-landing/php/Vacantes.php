@@ -39,10 +39,12 @@
 </head>
 
 <body class="bg-light">
+  <section>
 <div class="space-30"></div>
-<h1>para infresar una vacante nueva dale click al boton "Registrar vacante"
-  </h1>
-<button style="align:center;" class="btn button-registrarvacante " type="submit"><a href="login.php">Registrar vacante</a></button>
+<p>para infresar una vacante nueva dale click al boton "Registrar vacante"
+    </p>
+<button style="align:center;" class="btn Registrarvac" type="submit"><a href="login.php">Registrar vacante</a></button>
+</section>
 <div class="space-30"></div>
 
 <div class="space-30"></div>
