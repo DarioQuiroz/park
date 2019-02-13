@@ -68,41 +68,41 @@
       <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
 
-      <input type="hidden" class="formulariovacante" name="no"  value="<?php echo $_GET['no']?>">
+      <input type="hidden" class="form-control" name="no"  value="<?php echo $_GET['no']?>">
   		<label>Empresa </label>
-  		<input type="text" id="empresa" class="formulariovacante" name="empresa" value="<?php echo $consulta[1] ?>" ><br>
+  		<input type="text" id="empresa" class="form-control" name="empresa" value="<?php echo $consulta[1] ?>" ><br>
   		
   		<label>Puesto: </label>
-  		<input type="text" id="puesto" class="formulariovacante" name="puesto" value="<?php echo $consulta[2] ?>"><br>
+  		<input type="text" id="puesto" class="form-control" name="puesto" value="<?php echo $consulta[2] ?>"><br>
   		
   		<label>Perfil: </label>
-  		<textarea style="border-radius: 10px;" rows="3" cols="50" class="formulariovacante" name="perfil"> <?php echo $consulta[3] ?> 
+  		<textarea style="border-radius: 10px;" rows="3" cols="50" class="form-control" name="perfil"> <?php echo $consulta[3] ?> 
            </textarea><br>
 
            <label>Eperiencia </label>
-  		<input type="text" id="experiencia" class="formulariovacante" name="experiencia" value="<?php echo $consulta[4] ?>" ><br>
+  		<input type="text" id="experiencia" class="form-control" name="experiencia" value="<?php echo $consulta[4] ?>" ><br>
   		
   		<label>Idiomas: </label>
-  		<input type="text" id="idioma" class="formulariovacante" name="idioma" value="<?php echo $consulta[5] ?>"><br>
+  		<input type="text" id="idioma" class="form-control" name="idioma" value="<?php echo $consulta[5] ?>"><br>
 </div>
 <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <label>Nombre(contacto):  </label>
-  		<input type="text" id="nombre" class="formulariovacante" name="nombre" value="<?php echo $consulta[6] ?>" ><br>
+  		<input type="text" id="nombre" class="form-control" name="nombre" value="<?php echo $consulta[6] ?>" ><br>
   		
   		<label>Telefono: </label>
-  		<input type="text" id="telefono" class="formulariovacante" name="telefono" value="<?php echo $consulta[7] ?>"><br>
+  		<input type="number" id="telefono" class="form-control" name="telefono" value="<?php echo $consulta[7] ?>"><br>
   		
           
   		<label>correo: </label>
-  		<input type="email" id="correo" class="formulariovacante" name="correo" value="<?php echo $consulta[8] ?>"><br>
+  		<input type="email" id="correo" class="form-control" name="correo" value="<?php echo $consulta[8] ?>"><br>
   		
           
   		<label>Fecha: </label>
-  		<input type="date" id="fecha" class="formulariovacante" name="fecha" value="<?php echo $consulta[9] ?>"><br>
+  		<input type="date" id="fecha" class="form-control" name="fecha" value="<?php echo $consulta[9] ?>"><br>
   		
           
   		<label>RFC: </label>
-  		<input type="text" id="RFC" class="formulariovacante" name="RFC" value="<?php echo $consulta[10] ?>"><br>
+  		<input type="text" id="RFC" class="form-control" name="RFC" value="<?php echo $consulta[10] ?>"><br>
   		
   		<br>
   	
