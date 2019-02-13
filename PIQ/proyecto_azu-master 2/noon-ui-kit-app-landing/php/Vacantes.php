@@ -40,9 +40,7 @@
 
 <body class="bg-light">
 <div class="space-30"></div>
-<h1>para infresar una vacante nueva dale click al boton "Registrar vacante"
-  </h1>
-<button style="align:center;" class="btn button-registrarvacante " type="submit"><a href="login.php">Registrar vacante</a></button>
+<button style="align:" class="btn btn-lg button-registrarvacante btn-block" type="submit"><a href="login.php">Registrar vacante</a></button>
 <div class="space-30"></div>
 
 <div class="space-30"></div>
