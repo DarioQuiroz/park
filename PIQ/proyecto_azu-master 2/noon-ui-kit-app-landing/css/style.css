@@ -1614,6 +1614,7 @@ section > button:hover {
   border: none;
   padding: 0 30px 0 30px;
 
+
 }
 
 section #tamaño_grande {
@@ -1634,4 +1635,7 @@ section #tamaño_grande {
 #registe{
   width: 38px; 
   width: 30%; 
+}
+#inst{
+  text-align: center;
 }

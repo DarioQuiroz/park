@@ -44,13 +44,13 @@
     <section class="container">
       <div class="row ">
           <div class="col-4"></div>   
-          <form action="insertarusuario.php" method="post" class="form-signin col-4" > 
+          <form action="insertarusuario.php" method="post" class="form-signin col-4" onsubmit="return validar_usuario();"> 
              
               <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
               <input type="text" id="nombre" class="form-control" placeholder="Nombre" required autofocus name="nombre">
               <input type="email" id="email" class="form-control" placeholder="Correo" required name="correo">         
               <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="contraseña">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="berificarcontraseña">
+              <input type="password" id="inputPassword2" class="form-control" placeholder="Contraseña" required name="berificarcontraseña">
               <input type="text" id="rfc" class="form-control" placeholder="RFC" required autofocus name="rfc">
               <div class="space-20"></div>
               <div class="text-center">
@@ -63,7 +63,6 @@
           <div class="col-4"></div> 
      </div>
    </section>
-            
-      
+   <script src="validar.js"></script>
 </body>
 </html>
