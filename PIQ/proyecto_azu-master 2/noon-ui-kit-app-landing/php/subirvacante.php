@@ -45,32 +45,32 @@ error_reporting(0);
 <section id="tamaño_grande" style="background-color: white;">
 
 
-<form action="insertarvacante.php" id="tam_complete" method="post" >
+<form action="insertarvacante.php" id="tam_complete" method="post" onsubmit="return validar();">
  
   <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
         <a>Empresa: </a>
-      <input type="text" class="formulariovacante" name="empresa" id="empresa">
+      <input type="text" class="form-control" name="empresa" id="empresa">
       <a>Puesto: </a>
-      <input type="text" class="formulariovacante" name="puesto" />
+      <input type="text" class="form-control" id="puesto" name="puesto" />
       <a>Perfil: </a>
-      <textarea style="border-radius: 10px;" type="text" class="formulariovacante" name="perfil" > </textarea>
+      <textarea style="border-radius: 10px;" type="text" class="form-control" id="perfil" name="perfil" > </textarea>
      <a>Experiencia: </a>
-     <input type="text" class="formulariovacante" name="experiencia" />
+     <input type="text" class="form-control" id="experiencia" name="experiencia" />
      <a>Idiomas: </a>     
-     <input type="text" class="formulariovacante" name="idioma" />
+     <input type="text" class="form-control" id="idioma" name="idioma" />
     </div>
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <a>Nombre(contacto): </a>
-          <input type="text" class="formulariovacante" name="nombre" />
+          <input type="text" class="form-control" id="nombre" name="nombre" />
          <a>Telefono: </a>
-         <input type="text" class="formulariovacante" name="telefono" />
+         <input type="number" class="form-control" id="telefono" name="telefono" />
          <a>Correo: </a>
-         <input type="email" class="formulariovacante" name="correo" />
+         <input type="email" class="form-control" id="correo" name="correo" />
          <a>RFC: </a>
-         <input type="text" class="formulariovacante" name="rfc" />
+         <input type="text" class="form-control" id="rfc" name="rfc" />
          <a>Fecha:</a>
-         <input type="date" class="formulariovacante" name="fecha" />
+         <input type="date" class="form-control" id="fecha" name="fecha" />
 
 
 
@@ -175,6 +175,7 @@ $name = $_POST['name'];
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/Mostrar.js"></script>
 <script src="form-validation.js"></script>
+<script src="validar.js"></script>
 </body>
 
 </html>
