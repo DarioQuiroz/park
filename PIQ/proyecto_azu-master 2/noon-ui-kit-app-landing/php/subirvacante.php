@@ -48,11 +48,10 @@ error_reporting(0);
 
 <div class="space-40"></div>
 
-<section id="tamaño_grande" style="background-color: white;">
+<section id="tamaño_grande">
 
 
 <form action="insertarvacante.php" id="tam_complete" method="post" >
- 
   <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
         <a>Empresa: </a>
@@ -60,7 +59,7 @@ error_reporting(0);
       <a>Puesto: </a>
       <input type="text" class="formulariovacante" name="puesto" />
       <a>Perfil: </a>
-      <textarea style="border-radius: 10px;" type="text" class="formulariovacante" name="perfil" > </textarea>
+      <input type="text" class="formulariovacante" name="perfil" />
      <a>Experiencia: </a>
      <input type="text" class="formulariovacante" name="experiencia" />
      <a>Idiomas: </a>     
@@ -84,7 +83,7 @@ error_reporting(0);
   </div>
   <div class="space-20"></div>
   <div class="text-center">
-            <p><input id="registe" type="submit" class="btn btn-lg button-disponibilidad" value="Registrar"/></p>
+            <p><input type="submit" class="btn btn-lg button-disponibilidad btn-block" value="Registrar"/></p>
             </div>
 </form>
 
@@ -98,8 +97,7 @@ error_reporting(0);
 if(isset($_POST['submit'])){
 $name = $_POST['name'];
 }?>
- <div class="space-100"></div>
-<section style="background-color:#F6F6F6;" class="container" style="float:rigth; align: right;">
+<section class="container" style="float:rigth; align: right;">
       <div class="row ">
           <div class="col-md-8 col-md-offset-2"></div>   
           <form method="post" class="form-signin col-4" > 
@@ -109,17 +107,15 @@ $name = $_POST['name'];
               <input  type="text" name="name" class="form-control" placeholder="RFC" required>
               <div class="space-20"></div>
              
-  <button class="btn btn-sm button-disponibilidad btn-block"  type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
+  <button class="btn btn-lg button-disponibilidad btn-block"  type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
   
           </form>   
           <div class="col-4"></div> 
      </div>
-   </section >
+   </section>
             
-   <section style="background-color:#ffffff;"> 
-     
 
-<div id="vacs" class="space-50"></div>
+<div id="vacs" class="space-30"></div>
 <table class="table">
 <thead class="thead-dark">
 <tr>
@@ -159,14 +155,23 @@ $name = $_POST['name'];
      ?>
 <tbody>
 
+
+
+
+  
+
 <?php 
 
 }
  ?>
+    
+
+ <section id="modificacion">
+
+ </section>
 
 </tbody>
 </table>
-</section>
    
 
 <div class="text-center">

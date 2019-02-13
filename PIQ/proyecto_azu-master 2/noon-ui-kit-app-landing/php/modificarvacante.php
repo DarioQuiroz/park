@@ -94,7 +94,7 @@
   		
           
   		<label>correo: </label>
-  		<input type="email" id="correo" class="formulariovacante" name="correo" value="<?php echo $consulta[8] ?>"><br>
+  		<input type="text" id="correo" class="formulariovacante" name="correo" value="<?php echo $consulta[8] ?>"><br>
   		
           
   		<label>Fecha: </label>

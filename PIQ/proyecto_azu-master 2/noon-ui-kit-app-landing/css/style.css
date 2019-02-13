@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: white;
+	color: #767676;
 	-webkit-font-smoothing: antialiased;
 	width: 100%;
 	font-size:15px;
@@ -1192,7 +1192,8 @@ section > button {
   font-size: 16.996px;
   line-height: 20px;
   padding: 12px 18px 13px;
-
+  .rounded;
+  .trans;
   color:#ffffff;
   cursor:pointer;
   z-index:9999;
@@ -1200,7 +1201,7 @@ section > button {
 
 section > button:hover {
   opacity:0.8;
-
+  .trans;
 }
 
 
@@ -1413,7 +1414,7 @@ section > button:hover {
   height:30px;
 }
 
-
+}
 /*pop up 7*/
 
 .pop7 {
@@ -1582,7 +1583,7 @@ section > button:hover {
 }
 .button-disponibilidad {
   height: 50px;
-  width: 50%;
+  width: 50;
   background-color: #3C3CFF;
   color: #FFFFFF;
   border-radius: 10px;
@@ -1604,8 +1605,6 @@ section > button:hover {
   color: black;
 }
 .button-registrarvacante {
-  margin-left: 50%;
-  margin-right: 50%;
   height: 50px;
   width: 50;
   background-color: #3C3CFF;
@@ -1613,13 +1612,17 @@ section > button:hover {
   border-radius: 10px;
   border: none;
   padding: 0 30px 0 30px;
+<<<<<<< HEAD
 
 
+=======
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> parent of ec8d877... correcciones
 }
 
-section #tamaño_grande {
+#tam_grande form{
   width: 700px;
-  background-color: white;
   width:900px;
 
 }
@@ -1631,6 +1634,7 @@ section #tamaño_grande {
  
   width: 38px; 
   height: 15px;
+<<<<<<< HEAD
 }
 #registe{
   width: 38px; 
@@ -1638,4 +1642,6 @@ section #tamaño_grande {
 }
 #inst{
   text-align: center;
+=======
+>>>>>>> parent of ec8d877... correcciones
 }
