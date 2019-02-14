@@ -1658,3 +1658,12 @@ section #tamaño_grande {
   margin-right: -100%;
 }
 
+
+.modeli{
+  height: 60px;
+  width: 80px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 0px 0 0px;
+
+}
