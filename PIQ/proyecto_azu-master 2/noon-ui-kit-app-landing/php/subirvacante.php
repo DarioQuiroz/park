@@ -40,13 +40,17 @@ error_reporting(0);
 </head>
 <body class="bg-light">
 
-<div class="space-40"></div>
+
+
+
+
 
 <section id="tamaño_grande" style="background-color: white;">
 
 
-<form action="insertarvacante.php" id="tam_complete" method="post" onsubmit="return validar();">
- 
+<form id="inst" action="insertarvacante.php" id="tam_complete" method="post" onsubmit="return validar();">
+<div class="space-50"></div>
+<h2 class="center-block">Registrar vacante</h2>
   <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
         <a>Empresa: </a>
@@ -80,6 +84,7 @@ error_reporting(0);
   <div class="text-center">
             <p><input id="registe" type="submit" class="btn btn-lg button-disponibilidad" value="Registrar"/></p>
             </div>
+            <div class="space-30"></div>
 </form>
 
 
@@ -93,12 +98,12 @@ if(isset($_POST['submit'])){
 $name = $_POST['name'];
 }?>
  <div class="space-100"></div>
-<section style="background-color:#F6F6F6;" class="container" style="float:rigth; align: right;">
+<section  class="container" style="float:rigth; align: right;">
       <div class="row ">
-          <div class="col-md-8 col-md-offset-2"></div>   
+          <div class="col-md-8 "></div>   
           <form method="post" class="form-signin col-4" > 
              
-              <p class="h3 mb-3 font-weight-normal" >Ingresa tu RFC para acceder a tus vacantes</p>
+              <p class="h6 mb-3 font-weight-normal" >Ingresa tu RFC para acceder a tus vacantes</p>
               
               <input  type="text" name="name" class="form-control" placeholder="RFC" required>
               <div class="space-20"></div>

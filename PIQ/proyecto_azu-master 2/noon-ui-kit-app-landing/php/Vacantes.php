@@ -39,11 +39,17 @@
 </head>
 
 <body class="bg-light">
-  <section>
 <div class="space-30"></div>
-<p>para infresar una vacante nueva dale click al boton "Registrar vacante"
+  <section class="bg-vertical-thirty-half-base sm-bg-vertical-ten-half-base">
+  <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-col margin-50px-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin">
+<div class="space-30"></div>
+<p id="instruccion">Para ingresar una nueva vacante, dale click al boton "Registrar vacante"
     </p>
 <button style="align:center;" class="btn Registrarvac" type="submit"><a href="login.php">Registrar vacante</a></button>
+</div>
+</div>
 </section>
 <div class="space-30"></div>
 

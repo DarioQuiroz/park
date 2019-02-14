@@ -53,19 +53,16 @@
 <![endif]-->
 </head>
 <body>
-<div class="todo">
-  
-  <div id="cabecera">
-  	<img src="../images/swirl.png" width="1188" id="img1">
-  </div>
-  
-  <div id="contenido">
+<div class="todo container">
+
+  <div class="space-50"></div>
+    <div id="contenido">
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Modificar Vacante</h1> </span>
+  		<span> <h1>Modifica tu vacante</h1> </span>
   		<br>
 	  <form action="modif_vac2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
 
-      <div class="row">
+ <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
 
       <input type="hidden" class="form-control" name="no"  value="<?php echo $_GET['no']?>">
@@ -85,6 +82,8 @@
   		<label>Idiomas: </label>
   		<input type="text" id="idioma" class="form-control" name="idioma" value="<?php echo $consulta[5] ?>"><br>
 </div>
+
+
 <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <label>Nombre(contacto):  </label>
   		<input type="text" id="nombre" class="form-control" name="nombre" value="<?php echo $consulta[6] ?>" ><br>
@@ -105,17 +104,15 @@
   		<input type="text" id="RFC" class="form-control" name="RFC" value="<?php echo $consulta[10] ?>"><br>
   		
   		<br>
-  	
+      <button type="submit" class="btn btn-success" style="align:center;">Guardar</button>
           </div>
-          <button type="submit" class="btn btn-success" style="align:center;">Guardar</button>
+         
      </form>
   	</div>
   	
   </div>
   
-	<div id="footer">
-  		<img src="../images/swirl2.png" id="img2">
-  	</div>
+
 
 </div>
 
