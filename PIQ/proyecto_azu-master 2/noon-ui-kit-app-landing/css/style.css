@@ -904,7 +904,8 @@ label {
  
 form {
     margin:0 auto;
-    width:900px;
+    margin: 0 auto;
+    width: 400px;
 }
  
 input, textarea {
@@ -1554,14 +1555,35 @@ section > button:hover {
 	text-decoration:underline;
 	}
 
-/*Aquí empieza el css de sección FACTURACION*/
+/*Aquí empieza el css de sección Vacantes*/
+#form_regist{
+  margin:0 auto;
+  margin: 0 auto;
+  width: 900px;
+}
+#form_modif{
+  margin:0 auto;
+  margin: 0 auto;
+  width: 900px;
+}
 .button-registro:hover{
   background-color: #86DD72;
 }
 .button-registro{
   background-color: #36C114;
+
   border-radius: 10px;
 }
+.button-ingresar:hover{
+
+  background-color:#5372FF;
+ 
+}
+.button-ingresar{
+  background-color: #3C3CFF;
+  border-radius: 10px;
+}
+
 #checkbox-1{
   height:10px;
   margin: 0 50 0 0;
@@ -1582,7 +1604,7 @@ section > button:hover {
 }
 .button-disponibilidad {
   height: 50px;
-  width: 100%;
+  width: 30%;
   background-color: #3C3CFF;
   color: #FFFFFF;
   border-radius: 10px;
@@ -1607,22 +1629,25 @@ section > button:hover {
   margin-left: 50%;
   margin-right: 50%;
   height: 50px;
-  width: 50;
+  width: 50%;
   background-color: #3C3CFF;
   color: #FFFFFF;
   border-radius: 10px;
   border: none;
   padding: 0 30px 0 30px;
-
-
 }
 
-section #tamaño_grande {
-  width: 700px;
-  background-color: white;
-  width:900px;
+.vervacantes{
 
+  height: 50px;
+  width: 100%;
+  background-color: #3C3CFF;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  padding: 0 30px 0 30px;
 }
+
 .columna{
   margin: 5%;
 }
@@ -1660,10 +1685,16 @@ section #tamaño_grande {
 
 
 .modeli{
-  height: 60px;
+  height: 40px;
   width: 80px;
   border-radius: 10px;
   border: none;
   padding: 0 0px 0 0px;
 
+}
+.cerrar{
+  float:rigth; 
+  align: right; 
+
+  color: rgb(4, 7, 8)
 }

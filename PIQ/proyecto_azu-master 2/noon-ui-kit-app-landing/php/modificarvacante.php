@@ -1,3 +1,14 @@
+<?php 
+session_start();
+$varsesion = $_SESSION['usuario'];
+if($varsesion==null || $varsesion='')
+{
+    echo'usted no tiene autorizacion';
+    header("location:login.php");
+die();
+  }
+?>
+
 <?php
   
   $consulta=ConsultarProducto($_GET['no']);
@@ -53,6 +64,17 @@
 <![endif]-->
 </head>
 <body>
+<section  class="container" style="float:rigth; align: right;">
+      <div class="row ">
+          <div class="col-md-8 "></div>   
+          <form method="post" class="form-signin col-4" > 
+              <div class="space-20"></div>
+              <a href="cerrarsesion.php" class="cerrar" style="">Cerrar sesion</a>
+          </form>   
+          <div class="col-4"></div> 
+     </div>
+   </section >
+
 <div class="todo container">
 
   <div class="space-50"></div>
@@ -60,7 +82,7 @@
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		<span> <h1>Modifica tu vacante</h1> </span>
   		<br>
-	  <form action="modif_vac2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+	  <form id="form_modif" action="modif_vac2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
 
  <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >

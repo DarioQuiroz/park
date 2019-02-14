@@ -45,7 +45,7 @@
               <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="clave">
               <div class="space-20"></div>
              
-  <button class="btn btn-lg button-disponibilidad btn-block" type="submit"><a href="validarcorreo.php">Ingresar</a></button>
+  <button class="btn btn-lg button-ingresar btn-block" type="submit" value="Ingresar"><a href="validarcorreo.php">Ingresar</a></button>
   <button type="button" class="btn button-registro btn-lg btn-block" ><a href="registrarse.html">Registrarse</a></button>
   <a id="registro" class="registro">No tienes una cuenta?</a>
   

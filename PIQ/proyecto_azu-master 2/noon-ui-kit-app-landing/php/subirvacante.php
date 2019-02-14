@@ -1,4 +1,13 @@
-
+<?php 
+session_start();
+$varsesion = $_SESSION['usuario'];
+if($varsesion==null || $varsesion='')
+{
+    echo'usted no tiene autorizacion';
+    header("location:login.php");
+die();
+  }
+?>
 <?php 
 $conexion=mysqli_connect('localhost','root','','vacantes');
 error_reporting(0);
@@ -38,18 +47,31 @@ error_reporting(0);
 <!-- Custom styles for this template -->
 <link href="form-validation.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
 
 
 
-
+<section  class="container" style="float:rigth; align: right;">
+      <div class="row ">
+          <div class="col-md-8 "></div>   
+          <form method="post" class="form-signin col-4" > 
+             
+           
+              <div class="space-20"></div>
+              <a href="cerrarsesion.php" class="cerrar" style="">Cerrar sesion</a>
+          </form>   
+          <div class="col-4"></div> 
+     </div>
+   </section >
 
 
 <section id="tamaño_grande" style="background-color: white;">
 
 
-<form id="inst" action="insertarvacante.php" id="tam_complete" method="post" onsubmit="return validar();">
+<form  action="insertarvacante.php" id="form_regist" method="post" onsubmit="return validar();">
 <div class="space-50"></div>
+
 <h2 class="center-block">Registrar vacante</h2>
   <div class="row">
     <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
@@ -108,7 +130,7 @@ $name = $_POST['name'];
               <input  type="text" name="name" class="form-control" placeholder="RFC" required>
               <div class="space-20"></div>
              
-  <button class="btn btn-sm button-disponibilidad btn-block"  type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
+  <button class="btn btn-sm vervacantes btn-block"  type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
   
           </form>   
           <div class="col-4"></div> 
@@ -152,8 +174,8 @@ $name = $_POST['name'];
         echo "<th>"; echo $mostrar['tel']; echo "</th>";
         echo "<th>"; echo $mostrar['correo']; echo "</th>";
         echo "<th>"; echo $mostrar['add_date']; echo "</th>";
-        echo "<th>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class='btn btn-success'>Modificar</button> </a> </th>";
-        echo "<th> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </th>";
+        echo "<th>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
+        echo "<th> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class=' btn-danger modeli'>Eliminar</button></a> </th>";
       echo "</tr>";
      ?>
 <tbody>
@@ -180,7 +202,7 @@ $name = $_POST['name'];
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/Mostrar.js"></script>
 <script src="form-validation.js"></script>
-<script src="validar.js"></script>
+<script src="../js/validar.js"></script>
 </body>
 
 </html>

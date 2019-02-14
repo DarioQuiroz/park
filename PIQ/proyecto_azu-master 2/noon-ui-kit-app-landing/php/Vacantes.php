@@ -55,12 +55,12 @@
 
 <div class="space-30"></div>
 
-<table class="table">
+<table class="table table-bordered">
   <thead class="thead-dark">
     <tr>
 
-    <th>id_vacante</th>
-			<th>Empresa que solicita vacante</th>
+    
+			<th>Empresa_que solicita_vacante</th>
 			<th>Puesto</th>
 			<th>Perfil</th>
             <th>Experiencia</th>	
@@ -81,7 +81,7 @@
   <tbody>
   
   <tr>
-			<th><?php echo $mostrar['id_vac'] ?></th>
+			
 			<th><?php echo $mostrar['emp_vac'] ?></th>
             <th><?php echo $mostrar['puesto'] ?></th>
 			<th><?php echo $mostrar['Perfil_puesto'] ?></th>

@@ -4,7 +4,7 @@ $varsesion = $_SESSION['usuario'];
 if($varsesion==null || $varsesion='')
 {
     echo'usted no tiene autorizacion';
-    header("location:login.html");
+    header("location:login.php");
 die();
   }
 ?>
@@ -56,6 +56,7 @@ die();
                     <div class="space-200"></div>
       
                 <h1 class="h3 mb-3 font-weight-normal">Subir Archivos de factura</h1>
+                <a href="cerrarsesion.php">Cerrar sesion</a>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupFileAddon01">Subir</span>
