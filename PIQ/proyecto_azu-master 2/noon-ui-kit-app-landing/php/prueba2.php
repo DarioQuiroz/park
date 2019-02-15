@@ -1,26 +1,17 @@
-<?php 
-session_start();
-$varsesion = $_SESSION['usuario'];
-if($varsesion==null || $varsesion='')
-{
-    echo'usted no tiene autorizacion';
-    header("location:login.php");
-die();
-  }
-?>
-<?php 
-$conexion=mysqli_connect('localhost','root','','vacantes');
-error_reporting(0);
-?>
-
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="utf-8">
 <head>
 	<meta charset="UTF-8">
 	<title>Parque Industrial Querétaro</title>
     
     
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Signin Template · Bootstrap</title>
+
+
     <!--empiezan adaptaciones de share en redes sociales-->
     
     <meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
@@ -62,6 +53,18 @@ error_reporting(0);
     <link rel="stylesheet" href="../SVG/PLANO.html" />
     <link rel="" href="php/php - mysql.txt"/>
 
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
 
     
@@ -69,8 +72,7 @@ error_reporting(0);
 <body>
 
 
-
-	<header id="home" class="header">
+<header id="home" class="header">
 		<div class="main_menu_bg navbar-fixed-top">
 			<div class="container">
 				<div class="row">
@@ -104,9 +106,8 @@ error_reporting(0);
                             <li><a href="../index.html">Inicio</a></li>
 						
                             <li><a href="segundo.html">INTRANET</a></li>
-                            <li><a href="cerrarsesion.php">Cerrar sesion</a></li>
                              
-                           
+							
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
@@ -125,131 +126,34 @@ error_reporting(0);
 	</header> <!--End of header -->
 
 
+
 <div class="parallax"></div>
-	
 
-
-
-<section id="tamaño_grande" style="background-color: white;">
-
-
-<form  action="insertarvacante.php" id="form_regist" method="post" onsubmit="return validar();">
-<div class="space-50"></div>
-
-<h2 class="center-block">Registrar vacante</h2>
-  <div class="row">
-    <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
-        <a class="descripcion" style=" color: rgb(11, 12, 12);">Empresa: </a>
-      <input type="text" class="form-control" name="empresa" id="empresa">
-      <a class="descripcion" style=" color: rgb(11, 12, 12);">Puesto: </a>
-      <input type="text" class="form-control" id="puesto" name="puesto" />
-      <a class="descripcion" style=" color: rgb(11, 12, 12);">Perfil: </a>
-      <textarea style="border-radius: 10px;" type="text" class="form-control" id="perfil" name="perfil" > </textarea>
-     <a class="descripcion" style=" color: rgb(11, 12, 12);">Experiencia: </a>
-     <input type="text" class="form-control" id="experiencia" name="experiencia" />
-     <a class="descripcion" style=" color: rgb(11, 12, 12);">Idiomas: </a>     
-     <input type="text" class="form-control" id="idioma" name="idioma" />
-    </div>
-    <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <a class="descripcion" style=" color: rgb(11, 12, 12);">Nombre(contacto): </a>
-          <input type="text" class="form-control" id="nombre" name="nombre" />
-         <a class="descripcion" style=" color: rgb(11, 12, 12);">Telefono: </a>
-         <input type="number" class="form-control" id="telefono" name="telefono" />
-         <a class="descripcion" style=" color: rgb(11, 12, 12);">Correo: </a>
-         <input type="email" class="form-control" id="correo" name="correo" />
-         <a class="descripcion" style=" color: rgb(11, 12, 12);">RFC: </a>
-         <input type="text" class="form-control" id="rfc" name="rfc" />
-         <a class="descripcion" style=" color: rgb(11, 12, 12);">Fecha:</a>
-         <input type="date" class="form-control" id="fecha" name="fecha" />
-
-
-
-    </div>
-  </div>
-  <div class="space-20"></div>
-  <div class="text-center">
-            <p><input id="registe" type="submit" class="btn btn-lg button-disponibilidad" value="Registrar"/></p>
-            </div>
-            <div class="space-30"></div>
-</form>
-</section>   
-
-<?php
- 
-if(isset($_POST['submit'])){
-$name = $_POST['name'];
-}?>
- <div class="space-100"></div>
-<section  class="container" style="float:rigth; align: right;">
-     
-          <div class="col-md-8 "></div>   
-          <form method="post" class="form-signin col-4" > 
+<section class="container">
+      <div class="row ">
+          <div class="col-4"></div>   
+          <form action="insertarusuario.php" method="post" class="form-signin col-4" onsubmit="return validar_usuario();"> 
              
-              <p class="h6 mb-3 font-weight-normal" >Ingresa tu RFC para acceder a tus vacantes</p>
-              
-              <input  type="text" name="name" class="form-control" placeholder="RFC" required>
+              <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
+              <input type="text" id="nombre" class="form-control" placeholder="Nombre" required autofocus name="nombre">
+              <input type="email" id="email" class="form-control" placeholder="Correo" required name="correo">         
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="contraseña">
+              <input type="password" id="inputPassword2" class="form-control" placeholder="Contraseña" required name="berificarcontraseña">
+              <input type="text" id="rfc" class="form-control" placeholder="RFC" required autofocus name="rfc">
               <div class="space-20"></div>
-             
-  <button class="btn btn-sm vervacantes btn-block"  type="submit" name="submit" value="Submit Form">Ver mis Vacantes</button>
+              <div class="text-center">
+                    <p><input type="submit" class="btn btn-lg button-disponibilidad btn-block" value="Registrar"/></p>
+                    </div>
   
-          </form>   
+          </form>  
+          
+          
           <div class="col-4"></div> 
-    
-   </section >
-            
-   <section style="background-color:#ffffff;"> 
-     
+     </div>
+   </section>
 
-<div id="vacs" class="space-50"></div>
-<table class="table">
-<thead style="background-color:#34363a; border-collapse: collapse; color: white; ">
-<tr style="border-radius: 10px;">
-   
-        <th>Empresa_que solicita vacante</th>
-        <th>Puesto</th>
-        <th>Perfil</th>
-        <th>Experiencia</th>	
-        <th>Idiomas</th>	
-        <th>Nombre (contacto)</th>	
-        <th>Telefono</th>	
-        <th>Correo</th>	
-        <th>Fecha de publicasión</th>	
-</tr>
-</thead>
-<?php 
-    $sql="SELECT * from tvacantes WHERE rfc='$name' ";
-    $result=mysqli_query($conexion,$sql);
-    while($mostrar=mysqli_fetch_array($result)){
-
-
-        echo "<tr >";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['emp_vac']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['puesto']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['Perfil_puesto']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['expe']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['idioma_add']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['nom']; echo "</th>";
-        
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['tel']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['correo']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['add_date']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
-        echo "<th style='border-right: 1px solid black;'> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class=' btn-danger modeli'>Eliminar</button></a> </th>";
-      echo "</tr>";
-     ?>
-<tbody>
-
-<?php 
-
-}
- ?>
-
-</tbody>
-</table>
-</section>
-   
-	<!-- footer Section -->
-	<footer style="    height: 120px;" class="footer">
+    <div class="space-20"></div>
+   <footer id="footer" class="footer">
 		<div class="container">
 			<div class="row wow zoomIn" data-wow-duration="2s">
 				
@@ -273,14 +177,11 @@ $name = $_POST['name'];
 			</div>
 			
 		</div>
-	</footer>
-
-	<!-- STRAT SCROLL TO TOP -->
-	
-	<div class="scrollup">
+  </footer>
+  <div class="scrollup">
 		<a href="#"><i class="fa fa-chevron-up"></i></a>
 	</div>
-
+  <script src="../js/validar.js"></script>
 	<script type="text/javascript" src="../js/jquery/jquery.js"></script>
 	
 	<script type="text/javascript" src="../js/script.js"></script>

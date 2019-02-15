@@ -101,12 +101,15 @@ error_reporting(0);
 						  
 						  <ul class="nav navbar-nav navbar-right">
 						
-                            <li><a href="../index.html">Inicio</a></li>
-						
-                            <li><a href="segundo.html">INTRANET</a></li>
-                            <li><a href="cerrarsesion.php">Cerrar sesion</a></li>
+                            <li><a href="#nosotros">Quiénes Somos</a></li>
+							<li><a href="#features">INFRAESTRUCTURA</a></li>
+							<li><a href="#works">SERVICIOS</a>
+                            </li>
+                            <li><a href="#clientes">ASOCIADOS</a></li>
+							<li><a href="#joinus">contacto</a></li>
+                            <li><a href="php/segundo.html">INTRANET</a></li>
                              
-                           
+							
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
@@ -128,6 +131,19 @@ error_reporting(0);
 <div class="parallax"></div>
 	
 
+
+<section  class="container" style="float:rigth; align: right;">
+      <div class="row ">
+          <div class="col-md-8 "></div>   
+          <form method="post" class="form-signin col-4" > 
+             
+           
+              <div class="space-20"></div>
+              <a href="cerrarsesion.php" class="cerrar" style="">Cerrar sesion</a>
+          </form>   
+          <div class="col-4"></div> 
+     </div>
+   </section >
 
 
 <section id="tamaño_grande" style="background-color: white;">
@@ -223,18 +239,41 @@ $name = $_POST['name'];
 
 
         echo "<tr >";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['emp_vac']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['puesto']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['Perfil_puesto']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['expe']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['idioma_add']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['nom']; echo "</th>";
+    
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['emp_vac']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['puesto']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['Perfil_puesto']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['expe']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['idioma_add']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['nom']; echo "</th>";
         
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['tel']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['correo']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['add_date']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
-        echo "<th style='border-right: 1px solid black;'> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class=' btn-danger modeli'>Eliminar</button></a> </th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['tel']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['correo']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>"; echo $mostrar['add_date']; echo "</th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
+        echo "<th style='
+        border-right: 1px solid black;
+    '> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class=' btn-danger modeli'>Eliminar</button></a> </th>";
       echo "</tr>";
      ?>
 <tbody>
@@ -249,7 +288,7 @@ $name = $_POST['name'];
 </section>
    
 	<!-- footer Section -->
-	<footer style="    height: 120px;" class="footer">
+	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row wow zoomIn" data-wow-duration="2s">
 				
@@ -257,15 +296,23 @@ $name = $_POST['name'];
 					<div class="single_footer text-right">
 						
 						
-					
+						<div class="footer_socail">
+							<a href=""> <i class="fab fa-facebook-square"></i></a>
+							<a href=""><i class="fab fa-twitter-square"></i>
+							<a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://piq.com.mx&title=Parque Industrial Queretaro=&source=Linkedin" 
+                            onClick="MyWindow=window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://piq.com.mx&title=Parque 
+                            Industrial=&source=Linkedin', 'MyWindow', width=600, height=300); return false;"/><i class="fab fa-linkedin"></i></a>
+                         
+						</div>
 					</div>
 				</div>
                 
                 <!--inicia login-->
-            
-
-              
-                 <div class="space-20 text-center">
+                 <div style="margin-bottom:28px;;"></div>
+  
+                 <button  class="button-disponibilidad"><a href="php/segundo.html">INGRESAR A INTRANET</a></button>
+               <div class="space-20"></div>
+                 <div class="space-60 text-center">
                        <a href="../files/aviso%20de%20privacidad%20PIQ.pdf" >AVISO DE PRIVACIDAD </a>
                  </div>
          

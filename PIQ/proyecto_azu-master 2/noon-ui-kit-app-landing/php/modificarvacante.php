@@ -1,3 +1,5 @@
+
+
 <?php 
 session_start();
 $varsesion = $_SESSION['usuario'];
@@ -37,107 +39,270 @@ die();
    ];
   }
 ?>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="utf-8">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modificar Producto</title>
-
-<link rel="stylesheet" href="../css/space.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-<style type="text/css">
+	<meta charset="UTF-8">
+	<title>Parque Industrial Querétaro</title>
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Signin Template · Bootstrap</title>
 
 
-@import url("css/mycss.css");
-</style>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <!--empiezan adaptaciones de share en redes sociales-->
+    
+    <meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta data-react-helmet="true" http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data" />
+
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta data-react-helmet="true" name="description" content="La mejor opción para líderes, hospeda tu empresa y conóce nuestros beneficios."/>
+    
+    <meta data-react-helmet="true" name="google-site-verification" content="1rE9jjZz1N50ap3MzuT3b31qXOWEN4Z--OfhREYiwLw" />
+    <meta data-react-helmet="true" property="og:title" content="Nosotros somos un parque industrial Queretano" />
+    <meta data-react-helmet="true" property="og:description" content="La mejor opción para líderes, hospeda tu empresa y conóce nuestros beneficios."/>
+    <meta data-react-helmet="true" property="og:image" content="http://piq.com.mx/images/images/iphone1.png" />
+    <meta data-react-helmet="true" property="og:url" content="http://piq.com.mx" />
+    <meta data-react-helmet="true" property="og:locale" content="es_LA" />
+    <meta data-react-helmet="true" property="og:type" content="website"/>
+    <meta data-react-helmet="true" property="og:site_name" content="PIQ"/>
+    
+    
+
+    <!--TERMINAN adaptaciones de share en redes sociales-->
+    <link rel="stylesheet" href="../css/UI-Flag-master/flag.css" />
+    <link rel="stylesheet" href="../css/UI-Flag-master/flag.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity=
+    "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/linearicons.css" />
+	<link rel="stylesheet" href="../css/iconmoon.css" />
+	<link rel="stylesheet" href="../css/animat/animate.min.css" />
+	<link rel="stylesheet" href="../css/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="../css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="../css/themes/default/default.css" />
+	<link rel="stylesheet" href="../css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="../css/owl-carousel/owl.theme.css" />
+	<link rel="stylesheet" href="../css/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="../css/space.css"/>
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../SVG/PLANO.html" />
+    <link rel="" href="php/php - mysql.txt"/>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    
 </head>
 <body>
-<section  class="container" style="float:rigth; align: right;">
-      <div class="row ">
-          <div class="col-md-8 "></div>   
-          <form method="post" class="form-signin col-4" > 
-              <div class="space-20"></div>
-              <a href="cerrarsesion.php" class="cerrar" style="">Cerrar sesion</a>
-          </form>   
-          <div class="col-4"></div> 
-     </div>
-   </section >
-
-<div class="todo container">
-
-  <div class="space-50"></div>
-    <div id="contenido">
-  	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Modifica tu vacante</h1> </span>
-  		<br>
-	  <form id="form_modif" action="modif_vac2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
-
- <div class="row">
-    <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
-
-      <input type="hidden" class="form-control" name="no"  value="<?php echo $_GET['no']?>">
-  		<label>Empresa </label>
-  		<input type="text" id="empresa" class="form-control" name="empresa" value="<?php echo $consulta[1] ?>" ><br>
-  		
-  		<label>Puesto: </label>
-  		<input type="text" id="puesto" class="form-control" name="puesto" value="<?php echo $consulta[2] ?>"><br>
-  		
-  		<label>Perfil: </label>
-  		<textarea style="border-radius: 10px;" rows="3" cols="50" class="form-control" name="perfil"> <?php echo $consulta[3] ?> 
-           </textarea><br>
-
-           <label>Eperiencia </label>
-  		<input type="text" id="experiencia" class="form-control" name="experiencia" value="<?php echo $consulta[4] ?>" ><br>
-  		
-  		<label>Idiomas: </label>
-  		<input type="text" id="idioma" class="form-control" name="idioma" value="<?php echo $consulta[5] ?>"><br>
-</div>
 
 
-<div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <label>Nombre(contacto):  </label>
-  		<input type="text" id="nombre" class="form-control" name="nombre" value="<?php echo $consulta[6] ?>" ><br>
-  		
-  		<label>Telefono: </label>
-  		<input type="number" id="telefono" class="form-control" name="telefono" value="<?php echo $consulta[7] ?>"><br>
-  		
+<header id="home" class="header">
+		<div class="main_menu_bg navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="nave_menu">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button id="menu-boton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+                          aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+                                
+                               <a  href="#home" id="logo">
+                                <div class="logo hide-navigation">
+                                  <img src="../images/piq.png"   alt="Parque_industrial_queretaro" class="logo-light"/>
+                                  <img src="../images/piq-01.svg" alt="Parque_industrial_queretaro" class="logo-dark">
+                                 </div>
+				   	            </a>
+							
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						  
+						  <ul class="nav navbar-nav navbar-right">
+						
+                            <li><a href="../index.html">Inicio</a></li>
+						
+                            <li><a href="segundo.html">INTRANET</a></li>
+                            <li><a href="cerrarsesion.php">Cerrar sesion</a></li>
+                             
+                           
+							
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+					</div>	
+				</div><!--End of row -->
+				
+			</div><!--End of container -->
+            
+			
+		</div>
+
+        
+        
+
+	</header> <!--End of header -->
+
+    <div class="parallax"></div>
+	
+   
+
+
+   <div class="todo container">
+
+<div class="space-50"></div>
+  <div id="contenido">
+    <div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+        <span> <h1>Modifica tu vacante</h1> </span>
+          <br>
+         <form id="form_modif" action="modif_vac2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+
+         <div class="row">
+            <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
+
+              <input type="hidden" class="form-control" name="no"  value="<?php echo $_GET['no']?>">
+                  <label>Empresa </label>
+                  <input type="text" id="empresa" class="form-control" name="empresa" value="<?php echo $consulta[1] ?>" ><br>
+                  
+                  <label>Puesto: </label>
+                  <input type="text" id="puesto" class="form-control" name="puesto" value="<?php echo $consulta[2] ?>"><br>
+                  
+                  <label>Perfil: </label>
+                  <textarea style="border-radius: 10px;" rows="3" cols="50" class="form-control" name="perfil"> <?php echo $consulta[3] ?> 
+                     </textarea><br>
+
+                      <label>Eperiencia </label>
+                  <input type="text" id="experiencia" class="form-control" name="experiencia" value="<?php echo $consulta[4] ?>" ><br>
+                  
+                  <label>Idiomas: </label>
+                  <input type="text" id="idioma" class="form-control" name="idioma" value="<?php echo $consulta[5] ?>"><br>
+            </div>
+            <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <label>Nombre(contacto):  </label>
+                      <input type="text" id="nombre" class="form-control" name="nombre" value="<?php echo $consulta[6] ?>" ><br>
+                  
+                      <label>Telefono: </label>
+                      <input type="number" id="telefono" class="form-control" name="telefono" value="<?php echo $consulta[7] ?>"><br>
+                      
+                      
+                      <label>correo: </label>
+                      <input type="email" id="correo" class="form-control" name="correo" value="<?php echo $consulta[8] ?>"><br>
+                      
+                      
+                      <label>Fecha: </label>
+                      <input type="date" id="fecha" class="form-control" name="fecha" value="<?php echo $consulta[9] ?>"><br>
+                      
+                      
+                      <label>RFC: </label>
+                      <input type="text" id="RFC" class="form-control" name="RFC" value="<?php echo $consulta[10] ?>"><br>
+                      
+                  <br>
+                  <button type="submit" class="btn btn-success" style="align:center;">Guardar</button>
+             </div>
+           </div>
+   </form>
+    </div>
+    
+  </div> </div> </div> </div>
+
+
+  <footer id="footer" class="footer">
+      <div class="container">
+          <div class="row wow zoomIn" data-wow-duration="2s">
+              
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single_footer text-right">
+                      
+                      
+                  
+                  </div>
+              </div>
+              
+              <!--inicia login-->
           
-  		<label>correo: </label>
-  		<input type="email" id="correo" class="form-control" name="correo" value="<?php echo $consulta[8] ?>"><br>
-  		
-          
-  		<label>Fecha: </label>
-  		<input type="date" id="fecha" class="form-control" name="fecha" value="<?php echo $consulta[9] ?>"><br>
-  		
-          
-  		<label>RFC: </label>
-  		<input type="text" id="RFC" class="form-control" name="RFC" value="<?php echo $consulta[10] ?>"><br>
-  		
-  		<br>
-      <button type="submit" class="btn btn-success" style="align:center;">Guardar</button>
+
+            
+               <div class="space-20 text-center">
+                     <a href="../files/aviso%20de%20privacidad%20PIQ.pdf" >AVISO DE PRIVACIDAD </a>
+               </div>
+       
+
           </div>
+          
+      </div>
+  </footer>
+
+
+   
+		<div class="container">
+			<div class="row wow zoomIn" data-wow-duration="2s">
+				
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="single_footer text-right">
+						
+						
+					
+					</div>
+				</div>
+                
+                <!--inicia login-->
+            
+
+              
+                 <div class="space-20 text-center">
+                       <a href="../files/aviso%20de%20privacidad%20PIQ.pdf" >AVISO DE PRIVACIDAD </a>
+                 </div>
          
-     </form>
-  	</div>
-  	
-  </div>
   
+			</div>
+			
+		</div>
+	</footer>
+    
+	<div class="scrollup">
+		<a href="#"><i class="fa fa-chevron-up"></i></a>
+	</div>
 
+	<script type="text/javascript" src="../js/jquery/jquery.js"></script>
+	
+	<script type="text/javascript" src="../js/script.js"></script>
+	
+	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script type="text/javascript" src="../js/nivo-lightbox/nivo-lightbox.min.js"></script>
+	
+	<script type="text/javascript" src="../js/owl-carousel/owl.carousel.min.js"></script>
 
-</div>
-
-
+	<script type="text/javascript" src="../js/jquery-easing/jquery.easing.1.3.js"></script>
+    
+	<script type="text/javascript" src="../js/wow/wow.min.js"></script>
+   
 </body>
 </html>
