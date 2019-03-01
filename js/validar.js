@@ -54,3 +54,53 @@ function validar_usuario() {
             }
    
     }
+
+
+
+    
+function validar_prov() {
+
+    var nombre;
+    var giro;
+    var contacto;
+    var direccion;
+    var telefono;
+    var rfc;
+    var correo;
+    var sitioweb;
+    var Referencia1;
+    var Referencia2;
+    var Referencia3;
+    var pdf;
+   
+
+    nombre=document.getElementById("nombre").value;
+    giro=document.getElementById("giro").value;
+    contacto=document.getElementById("contacto").value;
+    direccion=document.getElementById("direccion").value;
+    telefono=document.getElementById("telefono").value;
+    rfc=document.getElementById("rfc").value;
+    correo=document.getElementById("correo").value;
+    sitioweb=document.getElementById("sitioweb").value;
+    Referencia1=document.getElementById("Referencia1").value;
+    Referencia2=document.getElementById("Referencia2").value;
+    Referencia3=document.getElementById("Referencia3").value;
+    pdf=document.getElementById("pdf").value;
+    
+     if(nombre===""||
+     giro===""||
+     contacto===""||
+     direccion===""||
+     telefono===""||
+     rfc===""||
+     correo===""||
+     sitioweb===""||
+     Referencia1===""||
+     Referencia2===""||
+     Referencia3===""||
+     pdf===""){
+        alert("todos los campos son obligatorios");
+        return false;
+        }
+
+}

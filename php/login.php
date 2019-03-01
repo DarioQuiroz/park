@@ -136,8 +136,7 @@
               <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required autofocus name="usuario">
               <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="clave">
               <div class="space-20"></div>
-             
-  <button class="btn btn-lg button-ingresar btn-block" type="submit" value="Ingresar" href="validarcorreo.php" value="Ingresar"><a href="validarcorreo.php">Ingresar</a></button>
+              <input id="ingresar_login" type="submit" class="btn btn-lg button-ingresar btn-block" value="Ingresar"/>
   <button type="button" class="btn button-registro btn-lg btn-block" ><a href="registrarse.html">Registrarse</a></button>  
           </form>   
           <div class="col-4"></div> 

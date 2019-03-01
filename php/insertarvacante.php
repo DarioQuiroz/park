@@ -31,7 +31,7 @@ if(!$resultado)
 {
     ?>
       <script type="text/javascript">
-	alert("error al registrar!!");
+	alert("¡ Error al registrar vacante!");
 	window.location.href='subirvacante.php';
 </script>
    
@@ -43,7 +43,7 @@ else{
     
      ?>
     <script type="text/javascript">
-	alert("Vacante registrada!!");
+	alert("! Vacante registrada exitosamente!");
 	window.location.href='subirvacante.php';
 </script>
 <?php

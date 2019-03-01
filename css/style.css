@@ -2244,7 +2244,7 @@ section > button:hover {
 
 .pop_inicial {
   position: fixed;
-  margin: 6% auto;
+  margin: 10% auto;
   left: 10%;
   right: 10%;
   width: 70%;
@@ -2312,7 +2312,7 @@ h1 {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 
-/*inicia la seccion de los archivos+*/
+
 #formularioarchivos{
   margin: 0 auto;
   width: 900px;
@@ -2331,3 +2331,19 @@ padding: 0 10px 0 10px;
 margin-left: -50%;
 margin-right: -100%;
 }
+.ingresa_loguin:hover{
+	background-color:#5372FF;
+
+  }
+  #ingresar_login{
+  
+      width: 100%;
+      height: 50px;
+      background-color: #3C3CFF;
+      color: #FFFFFF;
+      border-radius: 10px;
+      border: none;
+      padding: 0 30px 0 30px;
+  
+  }
+  /*inicia la seccion de los archivos+*/

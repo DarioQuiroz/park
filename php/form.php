@@ -73,86 +73,100 @@
 
 
 <header id="home" class="header">
-		<div class="main_menu_bg navbar-fixed-top">
-			<div class="container">
-				<div class="row">
-					<div class="nave_menu">
+	<div class="main_menu_bg navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="nave_menu">
 					<nav class="navbar navbar-default">
 					  <div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button id="menu-boton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
-                          aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-                                
-                               <a  href="#home" id="logo">
-                                <div class="logo hide-navigation">
-                                  <img src="../images/piq.png"   alt="Parque_industrial_queretaro" class="logo-light"/>
-                                  <img src="../images/piq-01.svg" alt="Parque_industrial_queretaro" class="logo-dark">
-                                 </div>
-				   	            </a>
-							
-						</div>
+									<div class="navbar-header">
+										<button id="menu-boton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+																aria-expanded="false">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+																		<a  href="#home" id="logo">
+																			<div class="logo hide-navigation">
+																				<img src="../images/piq.png"   alt="Parque_industrial_queretaro" class="logo-light"/>
+																				<img src="../images/piq-01.svg" alt="Parque_industrial_queretaro" class="logo-dark">
+																			</div>
+																		</a>
+								</div>
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						  
-						  <ul class="nav navbar-nav navbar-right">
-						
-                            <li><a href="../index.html">Inicio</a></li>
-						
-                            <li><a href="segundo.html">INTRANET</a></li>
-                             
-							
-						  </ul>
-						</div><!-- /.navbar-collapse -->
-					  </div><!-- /.container-fluid -->
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+										<ul class="nav navbar-nav navbar-right">
+
+												<li><a href="../index.html">Inicio</a></li>
+
+												<li><a href="segundo.html">INTRANET</a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+					 </div><!-- /.container-fluid -->
 					</nav>
-					</div>	
-				</div><!--End of row -->
-				
-			</div><!--End of container -->
-            
-			
-		</div>
-
-        
-        
-
-	</header> <!--End of header -->
+				</div>	
+			</div><!--End of row -->
+		</div><!--End of container -->
+	</div>
+</header> <!--End of header -->
 
 
 
 <div class="parallax"></div>
-<div class="space-20"></div>
-<div class="container">		
-			<div class="panel panel-primary">
-				 
-			
-			<form id="formularioarchivos" enctype="multipart/form-data" method="post" action="upload.php">
-						<h4 class="text-center">Cargar Multiple Archivos</h4>
-						<div class="form-group">
-							<label class="col-sm-2 control-label">Archivos</label>
-								<div class="col-sm-8">
-								<input name="image[]" required="" type="file" multiple />
-								</div>
-               <div class="space-20"></div>
-							<input type="submit" value="Subir" class="btn button-registro btn-lg btn-block">
-						</div>
-					</form>
-					
-				</div>
-			</div>
-        </div>
-        
+
+
+<section  style="background-color: white;"  class="container" >
+	<div id="contenido">
+ 		<div style="margin: auto; border-collapse: separate; border-spacing: 10px 5px;">
+
+		 <form id="form_arch" enctype="multipart/form-data" method="post" action="upload.php">
+										<div class="space-50"></div>
+									
+							<h4>Cargar Multiple Archivos</h4>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">Archivos</label>
+										<div class="col-sm-8">
+											<input name="image[]" required="" type="file" multiple />
+										</div>
+										<div class="space-20"></div>
+										<input type="submit" value="Subir" class="btn btn-success">
+									</div>
+									</form>
+									<ul><li><a href='./form.php'>Agregar mas</a></li>
+	 <li><a href='./images.php'>Ver imagenes</a></li>
+	 <li><a href='./files.php'>Ver Archivos</a></li></ul>
+		</div>
+	</div>
+</section>   
+
+
+<section id="proveedores" data-wow-duration="3s">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="text-center">
+                        <div style="padding-bottom:5%;"></div>
+                        
+                      
+                       <button class="button-disponibilidad" ><a href='./files.php'>Ver Archivos</a></button>
+                       <div style="padding-bottom:10%;"></div>
+                     </div>
+                     
+               
+            </div>
+         </div>
+      </div>
+      </div>
+</section>
 
 
 
-   <div class="space-20"></div>
+	 <div class="space-20"></div>
+	 
    <footer style="    height: 120px;" class="footer">
 		<div class="container">
 			<div class="row wow zoomIn" data-wow-duration="2s">

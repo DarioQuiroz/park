@@ -39,4 +39,24 @@ function del($id){
 	$con->query("delete from image where id=$id");
 }
 
+function get_imgs_rfc(){
+	$images = array();
+	$con = con();
+	$query=$con->query("select * from image where ");
+	while($r=$query->fetch_object()){
+		$images[] = $r;
+	}
+	return $images;
+}
+
+function get_img_rfc($id){
+	$image = null;
+	$con = con();
+	$query=$con->query("select * from image where id=$id");
+	while($r=$query->fetch_object()){
+		$image = $r;
+	}
+	return $image;
+}
+
 ?>

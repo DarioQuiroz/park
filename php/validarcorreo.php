@@ -19,7 +19,7 @@ if ($filas>0)
   {
     ?>
     <script type="text/javascript">
-alert("Los datos que ingresaste no corrrespoonden a ninguna cuenta!!");
+alert("¡Los datos que ingresaste no corrrespoonden a ninguna cuenta!");
 window.location.href='login.php';
 </script>
    <?php

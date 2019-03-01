@@ -11,7 +11,7 @@ ini_set('display_startup_errors', 1);
 $error = false;
 
 $files = array();
-foreach ($_FILES['image'] as $k => $l) {
+foreach ($_FILES['image'] as $k => $l) { 
  foreach ($l as $i => $v) {
  if (!array_key_exists($i, $files))
    $files[$i] = array();
@@ -38,6 +38,12 @@ foreach ($files as $file) {
 }   
 
 if(!$error){
+  ?>
+    <script type="text/javascript">
+
+	window.location.href='form.php';
+</script>
+<?php
 	print "<h4>Exito!</h4>";
 	print "<ul><li><a href='./form.php'>Agregar mas</a></li>";
 	print "<li><a href='./images.php'>Ver imagenes</a></li>";

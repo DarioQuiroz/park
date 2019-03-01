@@ -193,8 +193,8 @@
         <th style='border-right: 1px solid black;'><?php echo $mostrar['correo'] ?></th>
 		    <th style='border-right: 1px solid black;'><?php echo $mostrar['add_date'] ?></th>
 	      </tr>
-      <?php 
-            }
+      <?php
+         }
         ?>
    </tbody>
 </table>

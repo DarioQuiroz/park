@@ -63,6 +63,20 @@ img{
 /* Mobile Phone Screen Media */
 
 @media (max-width: 768px){
+    
+    
+    .pop_inicial {
+    width: 100%;
+  
+}
+
+.box {
+   
+     margin-top:30%;
+     margin-left: 3%;
+     margin-right: 15%;
+ 
+}
 	
 .banner{
 	background-size:cover;
@@ -177,6 +191,35 @@ input, textarea {
     width: 340px;
    
 }
+
+
+#banner1 {
+   height:600px;
+}
+
+#banner1 p {
+   width:300px;
+   margin-top:20%;
+}
+
+.single_banner_text1 h2 {
+   
+    margin-top: 90%;
+    
+}
+
+.navbar-toggle {
+
+    right:0;
+    margin-right: 10%;
+  
+}
+
+.parallax {
+display:none;
+  
+}
+
 }
 
 /******************************************************************************
@@ -189,14 +232,36 @@ Max Width "991px" - Min Width "768px"
 /******************************************************************************
   Max Width "767px"
 *******************************************************************************/
-@media (max-width: 767px) { 
-
+@media (min-width: 300px) and (max-width: 380px) { 
+  #form_arch {
+  
+    margin: 0 auto;
+    width: 320px;
+}
+#contenido{
+  margin-top: 30%;
+}
+#menu-boton {
+  float: none;
+  margin-right: 9%;
+}
 }  
 /******************************************************************************
   Min Width "992px"
 *******************************************************************************/
-@media (min-width: 992px) {
-
+@media (min-width: 380px) and (max-width: 450px) {
+  #form_arch {
+  
+    margin: 0 auto;
+    width: 320px;
+}
+#contenido{
+  margin-top: 30%;
+}
+#menu-boton {
+  float: none;
+  margin-right: 9%;
+}
 }
 /******************************************************************************
   Min Width "768px"
@@ -214,7 +279,27 @@ Max Width "991px" - Min Width "768px"
 	
 }
 /* ---------- MAX 480px ---------- */
- @media(max-width: 480px){	
+ @media (min-width: 300px) and(max-width: 360px){	
+
+  #log_fac{
+    margin-top: 33%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  #ing_fac {
+    margin-top: 33%;
+    margin: 0 auto;
+    width: 300px;
+  }
+  #log_row{
+    margin-top: 33%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }
 /******************************************************************************

@@ -232,7 +232,7 @@ $name = $_POST['name'];
         echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['tel']; echo "</th>";
         echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['correo']; echo "</th>";
         echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['add_date']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."'> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
+        echo "<th style='border-right: 1px solid black;'>  <a href=> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
         echo "<th style='border-right: 1px solid black;'> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class=' btn-danger modeli'>Eliminar</button></a> </th>";
       echo "</tr>";
      ?>

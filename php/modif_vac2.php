@@ -33,6 +33,6 @@
 ?>
 
 <script type="text/javascript">
-	alert("Datos Actualizados Exitosamante!!");
+	alert("¡Datos Actualizados Exitosamante!");
 	window.location.href='subirvacante.php';
 </script>
