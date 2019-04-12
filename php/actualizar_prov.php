@@ -17,7 +17,7 @@ ModificarProducto(
         function ModificarProducto($no, $nombre, $giro, $contacto, $direccion, $telefono, $rfc,  $correo,  $sitioweb, $Referencia1, $Referencia2, $Referencia3, $pdf)
 	{
 		include 'conexionvacante.php';
-		echo $sentencia="UPDATE provedores SET id='".$no."',
+		 $sentencia="UPDATE provedores SET id='".$no."',
          nombre='".$nombre."',
          giro='".$giro."',
          contacto='".$contacto."',
@@ -37,5 +37,5 @@ ModificarProducto(
 
 <script type="text/javascript">
 	alert("¡Datos Actualizados Exitosamante!");
-	window.location.href='subirvacante.php';
+	window.location.href='registro_provedor.php';
 </script>

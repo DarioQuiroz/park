@@ -66,7 +66,7 @@ img{
     
     
     .pop_inicial {
-    width: 100%;
+    width: 90%;
   
 }
 
@@ -153,7 +153,7 @@ height: 100%;
 #menu-boton {
  
    float:none;
-   margin-right: 0px;
+   margin-right: 10%;
 
 }
 
@@ -163,9 +163,9 @@ height: 100%;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #FFFFFF;
+  color: #000;
   text-transform: uppercase;
-background-color:#34363a;
+background-color:#f6f6f6;
 text-align:center;
 }
 
@@ -203,18 +203,27 @@ input, textarea {
 }
 
 .single_banner_text1 h2 {
-   
-    margin-top: 90%;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
     
 }
-
+.menu-scroll{
+  background-color: #000;
+}
 .navbar-toggle {
 
     right:0;
     margin-right: 10%;
   
+} form{
+  margin-top: 35%;
 }
-
+#ing_fac{
+  width: auto;
+}
 .parallax {
 display:none;
   
@@ -232,36 +241,17 @@ Max Width "991px" - Min Width "768px"
 /******************************************************************************
   Max Width "767px"
 *******************************************************************************/
-@media (min-width: 300px) and (max-width: 380px) { 
-  #form_arch {
-  
-    margin: 0 auto;
-    width: 320px;
-}
-#contenido{
-  margin-top: 30%;
-}
-#menu-boton {
-  float: none;
-  margin-right: 9%;
-}
+@media (max-width: 430px) { 
+  .vacantes{
+    margin-top: 20%;
+  }
+
 }  
 /******************************************************************************
   Min Width "992px"
 *******************************************************************************/
-@media (min-width: 380px) and (max-width: 450px) {
-  #form_arch {
-  
-    margin: 0 auto;
-    width: 320px;
-}
-#contenido{
-  margin-top: 30%;
-}
-#menu-boton {
-  float: none;
-  margin-right: 9%;
-}
+@media (min-width: 992px) {
+
 }
 /******************************************************************************
   Min Width "768px"
@@ -279,27 +269,7 @@ Max Width "991px" - Min Width "768px"
 	
 }
 /* ---------- MAX 480px ---------- */
- @media (min-width: 300px) and(max-width: 360px){	
-
-  #log_fac{
-    margin-top: 33%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  }
-  #ing_fac {
-    margin-top: 33%;
-    margin: 0 auto;
-    width: 300px;
-  }
-  #log_row{
-    margin-top: 33%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+ @media(max-width: 480px){	
 
 }
 /******************************************************************************

@@ -40,14 +40,11 @@ foreach ($files as $file) {
 if(!$error){
   ?>
     <script type="text/javascript">
-
+alert('los archivos se han cargado exitosamente');
 	window.location.href='form.php';
 </script>
 <?php
-	print "<h4>Exito!</h4>";
-	print "<ul><li><a href='./form.php'>Agregar mas</a></li>";
-	print "<li><a href='./images.php'>Ver imagenes</a></li>";
-	print "<li><a href='./files.php'>Ver Archivos</a></li></ul>";
+
 }
 
 ?>

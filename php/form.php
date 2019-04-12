@@ -101,9 +101,11 @@
 
 										<ul class="nav navbar-nav navbar-right">
 
-												<li><a href="../index.html">Inicio</a></li>
+												<li><a href="../index.html">INICIO</a></li>
 
 												<li><a href="segundo.html">INTRANET</a></li>
+												
+												<li><a href="./files_id.php">VER ARCHIVOS</a></li>
 										</ul>
 									</div><!-- /.navbar-collapse -->
 					 </div><!-- /.container-fluid -->
@@ -121,9 +123,9 @@
 
 <section  style="background-color: white;"  class="container" >
 	<div id="contenido">
- 		<div style="margin: auto; border-collapse: separate; border-spacing: 10px 5px;">
+ 		<div style="margin: auto;     display: flex; border-collapse: separate; border-spacing: 10px 5px;">
 
-		 <form id="form_arch" enctype="multipart/form-data" method="post" action="upload.php">
+		 <form id="form_arch" enctype="multipart/form-data" method="post" style="display: flex; flex-wrap: wrap;"action="upload.php">
 										<div class="space-50"></div>
 									
 							<h4>Cargar Multiple Archivos</h4>
@@ -136,9 +138,7 @@
 										<input type="submit" value="Subir" class="btn btn-success">
 									</div>
 									</form>
-									<ul><li><a href='./form.php'>Agregar mas</a></li>
-	 <li><a href='./images.php'>Ver imagenes</a></li>
-	 <li><a href='./files.php'>Ver Archivos</a></li></ul>
+									
 		</div>
 	</div>
 </section>   
@@ -152,7 +152,7 @@
                         <div style="padding-bottom:5%;"></div>
                         
                       
-                       <button class="button-disponibilidad" ><a href='./files.php'>Ver Archivos</a></button>
+                       <button class="button-disponibilidad" ><a href='files_id.php'>Ver Archivos</a></button>
                        <div style="padding-bottom:10%;"></div>
                      </div>
                      

@@ -7,21 +7,16 @@
 <html lang="utf-8">
 <head>
 	<meta charset="UTF-8">
-	<title>Parque Industrial Querétaro</title>
+<title>Parque Industrial Querétaro</title>
+<!--empiezan adaptaciones de share en redes sociales-->
     
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Signin Template · Bootstrap</title>
 
 
-    <!--empiezan adaptaciones de share en redes sociales-->
-    
+
+
     <meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta data-react-helmet="true" http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data" />
-
+    <meta data-react-helmet="true" name="author" content="interactua-mkt.com.mx" />
     <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
     <meta data-react-helmet="true" name="description" content="La mejor opción para líderes, hospeda tu empresa y conóce nuestros beneficios."/>
     
@@ -56,7 +51,10 @@
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../SVG/PLANO.html" />
-    <link rel="" href="php/php - mysql.txt"/>
+    <link rel="" href="php%20-%20mysql.txt"/>
+    
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
 
     <style>
       .bd-placeholder-img {
@@ -85,35 +83,33 @@
 					<nav class="navbar navbar-default">
 					  <div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button id="menu-boton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+						<div class="navbar-header  text-center">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
                           aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						  </button>
-                                
                                <a  href="#home" id="logo">
                                 <div class="logo hide-navigation">
                                   <img src="../images/piq.png"   alt="Parque_industrial_queretaro" class="logo-light"/>
                                   <img src="../images/piq-01.svg" alt="Parque_industrial_queretaro" class="logo-dark">
                                  </div>
 				   	            </a>
-							
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  
-						  <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
 						
-                            <li><a href="../index.html">Inicio</a></li>
-						
-                            <li><a href="segundo.html">INTRANET</a></li>
-                             
-							
-						  </ul>
+            <li><a href="../index.html">Inicio</a></li>
+
+            <li><a href="segundo.html">INTRANET</a></li>
+             
+
+</ul>
 						</div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav>
@@ -121,59 +117,67 @@
 				</div><!--End of row -->
 				
 			</div><!--End of container -->
-            
 			
 		</div>
-
-        
-        
-
-	</header> <!--End of header -->
-
+	</header> 
 
 
 <div class="parallax"></div>
 	
 <div class="space-30"></div>
+<section class="vacantes bg-vertical-thirty-half-base sm-bg-vertical-ten-half-base">
+     <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-col margin-50px-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin">
+                <div class="space-30"></div>
+                <p id="instruccion">Registrate por primera vez  </p>
+                    <button style="align:center;" class="btn ingresa_loguin" type="submit"><a href="registrarse.html"> Registro</a></button>
+                </div>
+            </div>
+         </div>
+     </div>
+    </section>
   <section class="bg-vertical-thirty-half-base sm-bg-vertical-ten-half-base">
      <div class="container">
          <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-col margin-50px-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin">
                 <div class="space-30"></div>
-                    <p id="instruccion">Para ingresar una nueva vacante, dale click al boton "Registrar vacante"
+                    <p id="instruccion">Para ingresar una nueva vacante, dale click al boton "Publicar vacante"
                      </p>
-                    <button style="align:center;" class="btn Registrarvac" type="submit"><a href="login.php">Registrar vacante</a></button>
+                    <button style="align:center;" class="btn Registrarvac" type="submit"><a href="login.php">publicar <br>vacante</a></button>
                 </div>
             </div>
          </div>
      </div>
     </section>
-    <section class="bg-vertical-thirty-half-base sm-bg-vertical-ten-half-base">
+   
+<div class="space-60"></div>
+<section class="bg-vertical-thirty-half-base sm-bg-vertical-ten-half-base">
      <div class="container">
          <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-col margin-50px-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin">
                 <div class="space-30"></div>
-                   
-                    <button style="align:center;" class="btn ingresa_loguin" type="submit"><a href="login.php"> ingresar</a></button>
+                    <h2 id="instruccion">Vacantes Disponibles
+    </h2>
+                    
                 </div>
             </div>
          </div>
      </div>
     </section>
-<div class="space-60"></div>
-
+    <div class="space-30"></div>
 <table class="table">
   <thead style="background-color:#34363a; border-collapse: collapse; color: white; ">
        <tr style="border-radius: 10px;">
-          <th>Empresa_que solicita_vacante</th>
-          <th>Puesto</th>
-          <th>Perfil</th>
-          <th>Experiencia</th>	
-          <th>Idiomas</th>	
-          <th>Nombre (contacto)</th>	
-          <th>Telefono</th>	
-          <th>Correo</th>	
-          <th>Fecha de publicasión</th>	
+          <th style="    text-align: center;">Empresa Solicitante</th>
+          <th style="    text-align: center;">Puesto</th>
+          <th style="    text-align: center;">Perfil</th>
+          <th style="    text-align: center;">Experiencia</th>	
+          <th style="    text-align: center;">Idiomas</th>	
+          <th style="    text-align: center;">Nombre (contacto)</th>	
+          <th style="    text-align: center;">Telefono</th>	
+          <th style="    text-align: center;">Correo</th>	
+          <th style="    text-align: center;">Fecha de publicación</th>	
       </tr>
     </thead>
         <?php 
@@ -202,46 +206,31 @@
    <footer class="footer" style="    height: 120px;">
 		<div class="container">
 			<div class="row wow zoomIn" data-wow-duration="2s">
-				
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="single_footer text-right">
-						
-						
-					
 					</div>
 				</div>
-                
                 <!--inicia login-->
-            
 
-              
                  <div class="space-20 text-center">
                        <a href="../files/aviso%20de%20privacidad%20PIQ.pdf" >AVISO DE PRIVACIDAD </a>
                  </div>
-         
-  
 			</div>
-			
 		</div>
   </footer>
   <div class="scrollup">
 		<a href="#"><i class="fa fa-chevron-up"></i></a>
 	</div>
-
+	<div class="scrollup">
+		<a href="#"><i class="fa fa-chevron-up"></i></a>
+	</div>
 	<script type="text/javascript" src="../js/jquery/jquery.js"></script>
-	
 	<script type="text/javascript" src="../js/script.js"></script>
-	
 	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
-	
 	<script type="text/javascript" src="../js/fancybox/jquery.fancybox.pack.js"></script>
-	
 	<script type="text/javascript" src="../js/nivo-lightbox/nivo-lightbox.min.js"></script>
-	
 	<script type="text/javascript" src="../js/owl-carousel/owl.carousel.min.js"></script>
-
 	<script type="text/javascript" src="../js/jquery-easing/jquery.easing.1.3.js"></script>
-    
 	<script type="text/javascript" src="../js/wow/wow.min.js"></script>
 </body>
 </html>

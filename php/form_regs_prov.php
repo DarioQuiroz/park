@@ -1,14 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 
-<?php 
-$conexion=mysqli_connect('localhost','root','','vacantes');
+<?php
+/*
+include_once 'config.inc.php';
+if (isset($_POST['subir'])) {
+    $nombre = $_FILES['archivo']['name'];
+    $tipo = $_FILES['archivo']['type'];
+    $tamanio = $_FILES['archivo']['size'];
+    $ruta = $_FILES['archivo']['tmp_name'];
+    $destino = "archivos/" . $nombre;
+    if ($nombre != "") {
+        if (copy($ruta, $destino)) {
 
+            $titulo= $_POST['nombre'];
+            $descri= $_POST['giro'];
+            $contacto=$_POST['contacto'];
+            $direccion=$_POST['direccion'];
+            $telefono=$_POST['telefono'];
+            $rfc =$_POST['rfc'];
+            $correo=$_POST['correo'];
+            $sitioweb=$_POST['sitioweb'];
+            $Referencia1=$_POST['Referencia1'];
+            $Referencia2=$_POST['Referencia2'];
+            $Referencia3=$_POST['Referencia3'];
+
+
+            $db=new Conect_MySql();
+            $sql = "INSERT INTO provedores(nombre,giro,contacto,direccion,telefono,rfc,correo,sitioweb,Referencia1,Referencia2,Referencia3,pdf)
+             VALUES('$titulo','$descri','$contacto','$direccion','$telefono','$rfc','$correo','$sitioweb','$Referencia1','$Referencia2','$Referencia3','$nombre')";
+            $query = $db->execute($sql);
+            if($query){
+             */  /*
+     ?>
+     <script type="text/javascript">
+   alert("! Proveedor registrado exitosamente!");
+   window.location.href='provedores_public.php';
+ </script>
+ <?php
+ /*
+            }
+        } else {
+            echo "Error";
+        }
+    }
+}*/
 ?>
 
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Piqueretaro</title>
-<meta charset="utf-8">
+    <head>
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta name="csrf-param" content="authenticity_token" />
@@ -16,11 +61,12 @@ $conexion=mysqli_connect('localhost','root','','vacantes');
 <link rel="stylesheet" media="all" href="../assets/application-6eaf635c425c1686eab15669fd509649ff45060b315fe52358f8f7aef81136c8.css" data-turbolinks-track="reload" />
 <script src="../assets/application-c2684059e5b98adb61b71a5d9ac339856999beefb748deb1e974ab2a7c2943d0.js" data-turbolinks-track="reload"></script>
 
-  </head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
 
-  <body>
-    
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="/">Parque Industrial Querétaro</a>
 
@@ -33,101 +79,89 @@ $conexion=mysqli_connect('localhost','root','','vacantes');
       </ul>
 
       <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="segundo.html">Intranet</a></li>
+      <li class="nav-item"><a class="nav-link" href="provedores_public.php">Lista de Proveedores</a></li>
           <li class="nav-item"><a class="nav-link" href="loguin_porv.php">Iniciar sesión</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-    
-
-    <div class="container">
+<div class="container">
       <h1>Nuevo Proveedor</h1>
-    
-<form  action="insertarprovedor.php" accept-charset="UTF-8" method="post" onsubmit="return validar_prov();">
-<input name="utf8" type="hidden" value="&#x2713;" />
-<input type="hidden" name="authenticity_token" value="wj40OKzZpnUsCBJ/7ILDclQi8Hf+HAp65Qsh3D0G+p5PuiQdKcTLwXYdm1AJmTPfrbwbdu1kCGRFrblg9RImhg==" />
-
-  <div class="form-group">
-    <label for="provider_name">Nombre</label>
-    <input class="form-control" type="text" name="nombre" id="nombre" />
+            <form method="post" action="insertarprovedor.php" enctype="multipart/form-data">
+            <div class="form-group">
+    <label for="provider_name">Empresa</label>
+    <input class="form-control" type="text" name="nombre" id="nombre" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_focus">Giro</label>
-    <input class="form-control" type="text" name="giro" id="giro" />
+    <input class="form-control" type="text" name="giro" id="giro" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_contact">Nombre de Contacto</label>
-    <input class="form-control" type="text" name="contacto" id="contacto" />
+    <input class="form-control" type="text" name="contacto" id="contacto" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_address">Dirección</label>
-    <input class="form-control" type="text" name="direccion" id="direccion" />
+    <input class="form-control" type="text" name="direccion" id="direccion" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_phone">Teléfono</label>
-    <input class="form-control" type="number" name="telefono" id="telefono" />
+    <input class="form-control" type="number" name="telefono" id="telefono" required/>
   </div>
 
   <div class="form-group">
-    <label for="provider_rfc">Rfc</label>
-    <input class="form-control" type="text" name="rfc" id="rfc" />
+    <label for="provider_rfc">RFC</label>
+    <input class="form-control" size="12" maxlength="12" type="text" onKeyUp="this.value=this.value.toUpperCase();" name="rfc" id="rfc" required/>
+   
   </div>
 
   <div class="form-group">
     <label for="provider_email">Correo electrónico</label>
-    <input class="form-control" type="email" name="correo" id="correo" />
+    <input class="form-control" type="email" name="correo" id="correo" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_website">Sitio web</label>
-    <input class="form-control" type="text" name="sitioweb" id="sitioweb" />
+    <input class="form-control" type="text" name="sitioweb" id="sitioweb" required/>
   </div>
 
   <div class="form-group">
-    <label for="provider_reference">Referencia 1</label>
-    <input class="form-control" type="text" name="Referencia1" id="Referencia1" />
+    <label for="provider_reference">Referencia de trabajo 1</label>
+    <input class="form-control" type="text" name="Referencia1" id="Referencia1" required/>
   </div>
 
   <div class="form-group">
-    <label for="provider_reference2">Referencia 2</label>
-    <input class="form-control" type="text" name="Referencia2" id="Referencia2" />
+    <label for="provider_reference2">Referencia de trabajo 2</label>
+    <input class="form-control" type="text" name="Referencia2" id="Referencia2" required/>
   </div>
 
   <div class="form-group">
-    <label for="provider_reference3">Referencia 3</label>
-    <input class="form-control" type="text" name="Referencia3" id="Referencia3" />
-  </div>
-
-  
-
-  <div class="form-group">
-    <label for="provider_pdf">PDF</label>
-    <input class="form-control" type="file" name="pdf" id="provider_pdf" />
+    <label for="provider_reference3">Referencia de trabajo 3</label>
+    <input class="form-control" type="text" name="Referencia3" id="Referencia3" required/>
   </div>
 
 
-  <div class="form-group">
+             <input class="btn btn-primary" type="submit" value="subir" name="subir">
+<a class="btn btn-primary" href="provedores_public.php">cancelar</a>
+            </form>
+        </div>
+        </div>
 
-      <input type="submit" name="commit" value="Registrar" class="btn btn-primary" />
-<br>
-      <a class="btn btn-link" href="provedores_public.php">Cancelar</a>
-  </div>
-</form>
 
-    </div>
 
-    <footer class="footer text-muted bg-light">
-  <div class="container">
-    <span>© 2019 Parque Industrial Queretaro</span>
-    <ul class="list-inline mb-0 float-right">
-    </ul>
-  </div>
-</footer>
-<script type="text/javascript" src="../js/validar.js"></script>
-  </body>
+        <footer class="footer text-muted bg-light">
+            <div class="container">
+                <span>© 2019 Parque Industrial Queretaro</span>
+                <ul class="list-inline mb-0 float-right">
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

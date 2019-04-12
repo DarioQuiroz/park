@@ -40,16 +40,17 @@ function validar_usuario() {
     inputPassword=document.getElementById("inputPassword").value;
     inputPassword2=document.getElementById("inputPassword2").value;
     rfc=document.getElementById("rfc").value;
+    rfc2=document.getElementById("rfc2").value;
     
     
-     if(nombre===""||inputPassword===""||inputPassword2===""||imail===""||rfc===""){
+     if(nombre===""||inputPassword===""||inputPassword2===""||imail===""||rfc===""||rfc2===""){
         alert("todos los campos son obligatorios");
         return false;
         }
 
 
-        if(inputPassword2 != inputPassword){
-            alert("los campos de contraseña no coinciden");
+        if((inputPassword2 != inputPassword || rfc != rfc2) ){
+            alert("los campos de contraseña o de RFC no coinciden");
             return false;
             }
    
@@ -104,3 +105,28 @@ function validar_prov() {
         }
 
 }
+
+/*campo de puras mayusculas*/
+function aMayusculas(obj,id){
+    obj = obj.toUpperCase();
+    document.getElementById(id).value = obj;
+}
+
+
+function validar_consulta_facturas() {
+    var rfc;
+
+ 
+ 
+    
+     if(document.getElementById("rfc_fac").value.length < 10){
+        alert("El campo debe contener todos los dígitos del Rfc");
+        return false;
+        }
+        else 
+        {
+            return true;
+        }
+    
+    }
+    

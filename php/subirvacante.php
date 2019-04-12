@@ -139,7 +139,7 @@ error_reporting(0);
 
 <h2 class="">Registrar vacante</h2>
     <div class="col-4 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
-        <a class="descripcion" style=" color: rgb(11, 12, 12);">Empresa: </a>
+        <a class="descripcion" style=" color: rgb(11, 12, 12);">Empresa Solicitante: </a>
         <input type="text" class="form-control" name="empresa" id="empresa">
         <a class="descripcion" style=" color: rgb(11, 12, 12);">Puesto: </a>
         <input type="text" class="form-control" id="puesto" name="puesto" />
@@ -157,7 +157,7 @@ error_reporting(0);
          <input type="number" class="form-control" id="telefono" name="telefono" />
          <a class="descripcion" style=" color: rgb(11, 12, 12);">Correo: </a>
          <input type="email" class="form-control" id="correo" name="correo" />
-         <a class="descripcion" style=" color: rgb(11, 12, 12);">RFC: </a>
+         <a class="descripcion" style=" color: rgb(11, 12, 12);">RFC de tu empresa: </a>
          <input type="text" class="form-control" id="rfc" name="rfc" />
          <a class="descripcion" style=" color: rgb(11, 12, 12);">Fecha:</a>
          <input type="date" class="form-control" id="fecha" name="fecha" />
@@ -232,7 +232,7 @@ $name = $_POST['name'];
         echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['tel']; echo "</th>";
         echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['correo']; echo "</th>";
         echo "<th style='border-right: 1px solid black;'>"; echo $mostrar['add_date']; echo "</th>";
-        echo "<th style='border-right: 1px solid black;'>  <a href=> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
+        echo "<th style='border-right: 1px solid black;'>  <a href='modificarvacante.php?no=".$mostrar['id_vac']."''> <button type='button' class=' btn-success modeli'>Modificar</button> </a> </th>";
         echo "<th style='border-right: 1px solid black;'> <a href='eliminar.php?no=".$mostrar['id_vac']."''><button type='button' class=' btn-danger modeli'>Eliminar</button></a> </th>";
       echo "</tr>";
      ?>

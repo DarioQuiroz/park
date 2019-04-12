@@ -13,24 +13,11 @@ $Referencia2=$_POST['Referencia2'];
 $Referencia3=$_POST['Referencia3'];
 $pdf=$_POST['pdf'];
 
-echo  $nombre;
-echo  $giro;
-echo  $contacto;
-echo  $direccion;
-echo  $telefono;
-echo  $rfc;
-echo  $correo;
-echo  $sitioweb;
-echo  $Referencia1;
-echo  $Referencia2;
-echo  $Referencia3;
-echo  $pdf;
 
 
 
-
-$insertar="INSERT INTO provedores ( `nombre`, `giro`, `contacto`, `direccion`, `telefono`, `rfc`, `correo`, `sitioweb`, `Referencia1`, `Referencia2`, `Referencia3`, `pdf`)
- VALUES ('$nombre', '$giro', '$contacto', '$direccion', ' $telefono', ' $rfc', '$correo', '$sitioweb', '$Referencia1', '$Referencia2', '$Referencia3', '$pdf')";
+$insertar="INSERT INTO provedores ( `nombre`, `giro`, `contacto`, `direccion`, `telefono`, `rfc`, `correo`, `sitioweb`, `Referencia1`, `Referencia2`, `Referencia3`)
+ VALUES ('$nombre', '$giro', '$contacto', '$direccion', ' $telefono', ' $rfc', '$correo', '$sitioweb', '$Referencia1', '$Referencia2', '$Referencia3')";
 $resultado=mysqli_query($conn, $insertar);
 if(!$resultado)
 {

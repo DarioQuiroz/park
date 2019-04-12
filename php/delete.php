@@ -9,14 +9,10 @@ if(isset($_GET["id"])){
 		?>
 		<script type="text/javascript">
 		alert("Eliminado exitosamente");
-		window.location.href='files.php';
+		window.location.href='files_id.php';
 	</script>
 	<?php
-		print "<h4>Eliminada Exitosamente!</h4>";
-	print "<ul><li><a href='./form.php'>Agregar mas</a></li>";
-	print "<li><a href='./images.php'>Ver imagenes</a></li>";
-	print "<li><a href='./files.php'>Ver Archivos</a></li></ul>";
-
+	
 
 	}
 }

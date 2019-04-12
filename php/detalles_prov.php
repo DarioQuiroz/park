@@ -58,27 +58,22 @@
 
       <ul class="navbar-nav">
 
-        <li class="nav-item">
-          <a class="nav-link" href="/notifications">
-            <span><i class="fa fa-flag-o" aria-hidden="true"></i></span>
-</a>         </li>
-
-          
-
+      <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="segundo.html">Intranet</a></li>
+          <li class="nav-item"><a class="nav-link" href="loguin_porv.php">Iniciar sesión</a></li>
+      </ul>
       </ul>
     </div>
   </div>
 </nav>
-
-    
-
     <div class="container">
       <div class="page-header">
   <h1>Mostrar Proveedor</h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Nombre</dt>
+  <dt>Empresa</dt>
   <dd><?php echo $consulta[1] ?></dd>
 
   <dt>Giro</dt>
@@ -87,20 +82,20 @@
   <dt>Nombre de Contacto</dt>
   <dd><?php echo $consulta[3] ?></dd>
 
-  <dt>Direccion</dt>
+  <dt>Dirección</dt>
   <dd><?php echo $consulta[4] ?> </dd>
 
   <dt>Teléfono</dt>
   <dd><?php echo $consulta[5] ?></dd>
 
-  <dt>Rfc</dt>
+  <dt>RFC</dt>
   <dd><?php echo $consulta[6] ?></dd>
 
-  <dt>Correo electrónico</dt>
+  <dt>Correo Electrónico</dt>
   <dd><?php echo $consulta[7] ?></dd>
 
-  <dt>Sitio web</dt>
-  <dd><?php echo $consulta[8] ?></dd>
+  <dt>Sitio WEB</dt>
+  <dd><a href="<?php echo $consulta[8] ?>"><?php echo $consulta[8] ?></a></dd>
 
   <dt>Referencia 1</dt>
   <dd><?php echo $consulta[9] ?> </dd>
@@ -111,10 +106,7 @@
   <dt>Referencia 3</dt>
   <dd><?php echo $consulta[11] ?></dd>
 
-  <dt>Pdf</dt>
-    <dd><?php echo $consulta[12] ?></dd>
-</dl>
-
+ 
     </div>
 
     <footer class="footer text-muted bg-light">

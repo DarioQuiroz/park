@@ -11,6 +11,6 @@
 ?>
 
 <script type="text/javascript">
-	alert("proveedore Eliminado!!");
-	window.location.href='subirvacante.php';
+	alert("¡ proveedor Eliminado !");
+	window.location.href='registro_provedor.php';
 </script>

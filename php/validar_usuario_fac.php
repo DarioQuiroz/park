@@ -8,10 +8,37 @@ $conexion=mysqli_connect("localhost","root","","vacantes");
 $consulta="SELECT * FROM usuarios where correo='$usuario' and clave='$clave'";
 $resultado=mysqli_query($conexion, $consulta);
 
+
+while($mostrar=mysqli_fetch_array($resultado)){
+
+  if($usuario=="facturapiq@piq.com.mx"&&$mostrar['correo']==="facturapiq@piq.com.mx"&& $clave===$mostrar['clave']){
+    header("location:files_id.php");
+  }
+  else if($usuario== $mostrar['correo'] && $clave==$mostrar['clave'])
+  {
+    header("location:consulta_fac_por_rfc.php");
+  }
+  else
+  {
+    ?>
+    <script type="text/javascript">
+alert("¡Los datos que ingresaste no corrrespoonden a ninguna cuenta!");
+//window.location.href='loguin_facturar.php';
+</script>
+   <?php
+
+  }
+  echo '<br>';
+
+
+}
+
+
+
 $filas=mysqli_num_rows($resultado);
 if ($filas>0)
 {
-  header("location:files.php");
+ // header("location:consulta_fac_por_rfc.php");
   
 
   }

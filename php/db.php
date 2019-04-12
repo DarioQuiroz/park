@@ -1,9 +1,6 @@
 <?php
 
-/**
-* Conexion a la base de datos y funciones
-* Autor: evilnapsis
-**/
+
 
 function con(){
 	return new mysqli("localhost","root","","multi_upload");
@@ -11,7 +8,7 @@ function con(){
 
 function insert_img($folder, $image){
 	$con = con();
-	$con->query("insert into image (folder,src,created_at) value (\"$folder\",\"$image\",NOW())");
+	$con->query("insert into image (folder,src,created_at,estado) value (\"$folder\",\"$image\",NOW(),0)");
 }
 
 function get_imgs(){
@@ -42,21 +39,58 @@ function del($id){
 function get_imgs_rfc(){
 	$images = array();
 	$con = con();
-	$query=$con->query("select * from image where ");
+	$query=$con->query("select * from image");
 	while($r=$query->fetch_object()){
 		$images[] = $r;
 	}
 	return $images;
 }
 
-function get_img_rfc($id){
-	$image = null;
+function get_imgs_porid(){
+	$images = array();
 	$con = con();
-	$query=$con->query("select * from image where id=$id");
+	$query=$con->query("select * from image order by id desc");
 	while($r=$query->fetch_object()){
-		$image = $r;
+		$images[] = $r;
 	}
-	return $image;
+	return $images;
+}
+function get_imgs_pornombre(){
+	$images = array();
+	$con = con();
+	$query=$con->query("select * from image order by src");
+	while($r=$query->fetch_object()){
+		$images[] = $r;
+	}
+	return $images;
 }
 
+function get_imgs_porfecha(){
+	$images = array();
+	$con = con();
+	$query=$con->query("select * from image order by created_at");
+	while($r=$query->fetch_object()){
+		$images[] = $r;
+	}
+	return $images;
+}
+
+function get_imgs_porestado(){
+	$images = array();
+	$con = con();
+	$query=$con->query("select * from image order by estado desc");
+	while($r=$query->fetch_object()){
+		$images[] = $r;
+	}
+	return $images;
+}
+function search_imgs($search){
+    $images = array();
+    $con = con();
+    $query=$con->query('select * from image where src like "%'.$search.'%"');
+    while($r=$query->fetch_object()){
+        $images[] = $r;
+    }
+    return $images;
+}
 ?>

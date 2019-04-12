@@ -74,6 +74,9 @@ die();
 </a>         </li>
 
           <li class="nav-item dropdown">
+          <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="segundo.html">Intranet</a></li>
             <a id="navbar-dropdown" class="nav-link dropdown-toggle" data-target="nav-account-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               <img height="20" width="20" class="rounded" src="https://secure.gravatar.com/avatar/33f4beeb170919a0cd66e19c5100e428?default=mm&amp;size=40" />
 </a>            <div id="nav-account-dropdown" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown">
@@ -100,63 +103,60 @@ die();
 <input type="hidden" class="form-control" name="no"  value="<?php echo $_GET['no']?>">
   <div class="form-group">
     <label for="provider_name">Nombre</label>
-    <input class="form-control" type="text" name="nombre" id="provider_name" value="<?php echo $consulta[1] ?>" />
+    <input class="form-control" type="text" name="nombre" id="provider_name" value="<?php echo $consulta[1] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_focus">Giro</label>
-    <input class="form-control" type="text" name="giro" id="provider_focus" value="<?php echo $consulta[2] ?>" />
+    <input class="form-control" type="text" name="giro" id="provider_focus" value="<?php echo $consulta[2] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_contact">Nombre de Contacto</label>
-    <input class="form-control" type="text" name="contacto" id="provider_contact" value="<?php echo $consulta[3] ?>" />
+    <input class="form-control" type="text" name="contacto" id="provider_contact" value="<?php echo $consulta[3] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_address">Dirección</label>
-    <input class="form-control" type="text" name="direccion" id="provider_address" value="<?php echo $consulta[4] ?>" />
+    <input class="form-control" type="text" name="direccion" id="provider_address" value="<?php echo $consulta[4] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_phone">Teléfono</label>
-    <input class="form-control" type="text" name="telefono" id="provider_phone" value="<?php echo $consulta[5] ?>" />
+    <input class="form-control" type="text" name="telefono" id="provider_phone" value="<?php echo $consulta[5] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_rfc">Rfc</label>
-    <input class="form-control" type="text" name="rfc" id="provider_rfc" value="<?php echo $consulta[6] ?>" />
+    <input class="form-control" type="text"  maxlength="12" type="text" onKeyUp="this.value=this.value.toUpperCase();" name="rfc" id="provider_rfc" value="<?php echo $consulta[6] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_email">Correo electrónico</label>
-    <input class="form-control" type="text" name="correo" id="provider_email" value="<?php echo $consulta[7] ?>" />
+    <input class="form-control" type="text" name="correo" id="provider_email" value="<?php echo $consulta[7] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_website">Sitio web</label>
-    <input class="form-control" type="text" name="sitioweb" id="provider_website" value="<?php echo $consulta[8] ?>" />
+    <input class="form-control" type="text" name="sitioweb" id="provider_website" value="<?php echo $consulta[8] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_reference">Referencia 1</label>
-    <input class="form-control" type="text" name="Referencia1" id="provider_reference" value="<?php echo $consulta[9] ?>" />
+    <input class="form-control" type="text" name="Referencia1" id="provider_reference" value="<?php echo $consulta[9] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_reference2">Referencia 2</label>
-    <input class="form-control" type="text" name="Referencia2" id="provider_reference2" value="<?php echo $consulta[10] ?>" />
+    <input class="form-control" type="text" name="Referencia2" id="provider_reference2" value="<?php echo $consulta[10] ?>" required/>
   </div>
 
   <div class="form-group">
     <label for="provider_reference3">Referencia 3</label>
-    <input class="form-control" type="text" name="Referencia3" id="provider_reference3" value="<?php echo $consulta[11] ?>" />
+    <input class="form-control" type="text" name="Referencia3" id="provider_reference3" value="<?php echo $consulta[11] ?>" required/>
   </div>
 
-  <div class="form-group">
-    <label for="provider_pdf">Pdf</label>
-    <input class="form-control" type="text" name="pdf" id="provider_pdf" value="<?php echo $consulta[12] ?>" />
-  </div>
+  
 
 
   <div class="form-group">
@@ -166,7 +166,7 @@ die();
       </div>
   <p>    <input type="submit" name="commit" value="Actualizar" class="btn btn-primary" data-disable-with="Actualizar" /></p>
 
-      <a class="btn btn-link" href="insertarprovedor.php">Cancelar</a>
+      <a class="btn btn-primary" href="registro_provedor.php">Cancelar</a>
   </div>
 </form>
 

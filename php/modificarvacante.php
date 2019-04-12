@@ -186,7 +186,7 @@ die();
             <div class="col-6 columna col-lg-4 col-md-4 col-sm-12 col-xs-12" >
 
               <input type="hidden" class="form-control" name="no"  value="<?php echo $_GET['no']?>">
-                  <label>Empresa </label>
+                  <label>Empresa Solicitante</label>
                   <input type="text" id="empresa" class="form-control" name="empresa" value="<?php echo $consulta[1] ?>" ><br>
                   
                   <label>Puesto: </label>

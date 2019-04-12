@@ -44,10 +44,9 @@ die();
 
       <ul class="navbar-nav">
 
-        <li class="nav-item">
-          
-            <span><i class="fa fa-flag-o" aria-hidden="true"></i></span>
-</a>         </li>
+      <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="segundo.html">Intranet</a></li>
 
           <li class="nav-item dropdown">
             <a id="navbar-dropdown" class="nav-link dropdown-toggle" data-target="nav-account-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/">
@@ -68,10 +67,7 @@ die();
 
     <div class="container">
         <h2>¡Bienvenido al área de proveedores!</h2>
-        <p class="lead">¿Eres proveedor? Puedes registrarte aquí:</p>
-      <form class="button_to" method="get" action="form_regs_prov.php">
-        <input class="btn btn-primary" type="submit" value="Registro" />
-      </form>
+       
 
     </div>
     <div class="container">
@@ -88,9 +84,9 @@ die();
             <th>Rfc</th>
             <th>Correo electrónico</th>
             <th>Sitio Web</th>
-            <th>Referencia 1</th>
-            <th>Referencia 2</th>
-            <th>Referencia 3</th>
+            <th>Referencia de trabajo 1</th>
+            <th>Referencia de trabajo 2</th>
+            <th>Referencia de trabajo 3</th>
             <th>PDF</th>
 
       </tr>
@@ -118,7 +114,7 @@ die();
                       <td><?php echo $mostrar['Referencia1'] ?> </td>
                       <td><?php echo $mostrar['Referencia2'] ?></td>
                       <td><?php echo $mostrar['Referencia3'] ?></td>
-                       <td><?php echo $mostrar['pdf'] ?></td>
+                      <td> <a href="archivos/<?php echo $mostrar['pdf'] ?>"><?php echo $mostrar['pdf'] ?></a></td>
                      
 
 </tr>   
