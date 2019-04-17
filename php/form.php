@@ -128,7 +128,7 @@
 		 <form id="form_arch" enctype="multipart/form-data" method="post" style="display: flex; flex-wrap: wrap;"action="upload.php">
 										<div class="space-50"></div>
 									
-							<h4>Cargar Multiple Archivos</h4>
+							<h4>Cargar Multiples Archivos</h4>
 								<div class="form-group">
 									<label class="col-sm-2 control-label">Archivos</label>
 										<div class="col-sm-8">

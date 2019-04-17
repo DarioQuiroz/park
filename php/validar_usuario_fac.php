@@ -2,21 +2,22 @@
 session_start();
 $usuario=$_POST['usuario'];
 $clave=$_POST['clave'];
+$rfc=$_POST['RFC'];
 
 $_SESSION['usuario']=$usuario;
 $conexion=mysqli_connect("localhost","root","","vacantes");
-$consulta="SELECT * FROM usuarios where correo='$usuario' and clave='$clave'";
+$consulta="SELECT * FROM usuarios where correo='$usuario' and clave='$clave' and rfc='$rfc'";
 $resultado=mysqli_query($conexion, $consulta);
 
 
 while($mostrar=mysqli_fetch_array($resultado)){
 
-  if($usuario=="facturapiq@piq.com.mx"&&$mostrar['correo']==="facturapiq@piq.com.mx"&& $clave===$mostrar['clave']){
+  if($usuario=="facturapiq@piq.com.mx"&&$mostrar['correo']==="facturapiq@piq.com.mx"&& $clave===$mostrar['clave']&& $rfc===$mostrar['rfc']){
     header("location:files_id.php");
   }
   else if($usuario== $mostrar['correo'] && $clave==$mostrar['clave'])
   {
-    header("location:consulta_fac_por_rfc.php");
+    header("location:consulta_fac_por_rfc.php?rfc=$rfc");
   }
   else
   {

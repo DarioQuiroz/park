@@ -11,7 +11,7 @@ $resultado=mysqli_query($conexion, $consulta);
 
 while($mostrar=mysqli_fetch_array($resultado)){
 
-  if($usuario=="administracion@administracion.com"&&$mostrar['correo']==="administracion@administracion.com"&& $clave===$mostrar['clave']){
+  if($usuario=="administracionproveedores@piq.com.mx"&&$mostrar['correo']==="administracionproveedores@piq.com.mx"&& $clave===$mostrar['clave']){
     header("location:registro_provedor.php");
   }
   else if($usuario== $mostrar['correo'] && $clave==$mostrar['clave'])

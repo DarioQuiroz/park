@@ -106,8 +106,7 @@
                     <li><a href="../index.html">Inicio</a></li>
 
                     <li><a href="segundo.html">INTRANET</a></li>
-                    <li><a href="Vacantes.php">Bolsa de trabajo</a></li>
-
+                  
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -138,6 +137,7 @@
         <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
         <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required autofocus name="usuario">
         <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="clave">
+        <input type="text" id="inputRfc" class="form-control" placeholder="RFC" required name="RFC">
         <div class="space-20"></div>
         <input id="ingresar_login" type="submit" class="btn btn-lg button-ingresar btn-block" value="Ingresar" />
         <button type="button" class="btn button-registro btn-lg btn-block"><a href="registrarsefac.html">Registrarse</a></button>

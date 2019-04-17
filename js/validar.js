@@ -53,6 +53,11 @@ function validar_usuario() {
             alert("los campos de contraseña o de RFC no coinciden");
             return false;
             }
+
+            if((rfc.length<11) ){
+                alert("El campo del RFC debe contener como minimo once carcteres y máximo trece.");
+                return false;
+                }
    
     }
 

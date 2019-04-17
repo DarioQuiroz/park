@@ -1,5 +1,8 @@
 <?php
+error_reporting(0);
 session_start();
+$rfcres=$_GET['rfc'];
+
 $varsesion = $_SESSION['usuario'];
 if ($varsesion == null || $varsesion = '') {
     echo 'usted no tiene autorizacion';
@@ -10,12 +13,13 @@ if ($varsesion == null || $varsesion = '') {
 <?php
 error_reporting(0);
 include "db.php";
-if (empty($_POST['name'])) {
-    ?>
+if (empty($_POST['name']))
+{//$files = search_genriconombre($_GET['rfc']);
+  }
 
-<?php
-  /*	$files = get_imgs_rfc();*/
-} else $files = search_imgs($_POST['name']);
+else
+$files = search_imgs($_POST['name']);
+
 ?>
 <html>
 
@@ -94,7 +98,7 @@ if (empty($_POST['name'])) {
 
 
 
-  <section class="container">
+  <section style="display:none" class="container">
     <div class="col-md-8 "></div>
     <div class="space-20"></div>
     <h1>Archivos</h1>
@@ -136,7 +140,7 @@ if (empty($_POST['name'])) {
         </table>
       </div>
     </div>
-  <?php else : echo ("<script> alert('no hay conincidencias con la busquedad');</script>") ?>
+  <?php else : echo ("<script> /*alert('no hay conincidencias con la busquedad');*/</script>") ?>
 
   <?php endif; ?>
   <footer class="footer text-muted bg-light">

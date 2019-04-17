@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include 'conexionvacante.php';
 $nombre = $_POST['nombre'];
 $correo = $_POST['correo'];

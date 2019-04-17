@@ -12,8 +12,20 @@ include "db.php";
 if (empty($_POST['name']))
   $files = get_imgs_porfecha();
 
-else
-  $files = search_imgs($_POST['name']);
+
+  else
+ 
+  $files = search_genriconombre($_POST['name']);
+  
+  if (empty($_POST['name1']))
+  {
+    
+  }
+  //$files = get_imgs_porid();
+  
+  else
+  
+  $files = search_genricoid($_POST['name1']);
 ?>
 <html>
 
@@ -90,14 +102,6 @@ else
     <div class="col-md-8 "></div>
     <div class="space-20"></div>
     <h1>Archivos</h1>
-    <form method="post" class="form-signin col-4">
-      <p class="h6 mb-3 font-weight-normal">Ingresa el RFC para buscar las Facturas que desee</p>
-      <input type="text" name="name" class="form-control" placeholder="RFC" required>
-      <div class="space-20"></div>
-      <button id="VER_FAC" class="btn btn-sm vervacantes btn-block" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form">Ver mis Facturas</button>
-      <div class="space-20"></div>
-
-    </form>
     <div class="col-4"></div>
 
   </section>
@@ -122,20 +126,26 @@ else
           <table class="table table-striped table-bordered table-hover">
             <thead>
               <tr>
+              <th scope="col">
+                <form method="post" class="form-signin col-12">
+                    <input type="search" name="name1" class="form-control" placeholder="id" required>
+                    <div class="space-10"></div>
+                    <button id="VER_FAC" class="btn btn-sm vervacantes btn-block" style="     margin-top: 5%;background-color: blue; color: white;" type="submit" name="submit" value="Submit Form">Buscar archivos</button>
+                  </form>
+                  </th>
                 <th scope="col">
-
-                  <a href="files_id.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por Id</a>
-
-                <th scope="col">
-                  <a href="files_nombre.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por Nombre</a>
-
+                  <form method="post" class="form-signin col-12">
+                    <input type="search" name="name" class="form-control" placeholder="Parte del nombre" required>
+                    <div class="space-10"></div>
+                    <button id="VER_FAC" class="btn btn-sm vervacantes btn-block" style="     margin-top: 5%;background-color: blue; color: white;" type="submit" name="submit" value="Submit Form">Buscar archivos</button>
+                  </form>
                 </th>
-                <th scope="col">
-                  <a href="files_fecha.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por fecha</a>
+                <th scope="col" style="display: table-cell; vertical-align: middle;">
+                  <a href="files_fecha.php" class="btn btn-primary" style="background-color: #3C3CFF; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por fecha</a>
                 </th>
                 <th scope="col"></th>
                 <th scope="col"></th>
-                <th scope="col">
+                <th scope="col" style="display: table-cell; vertical-align: middle;">
                   <a href="files_estado.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por estado</a>
                 </th>
 
