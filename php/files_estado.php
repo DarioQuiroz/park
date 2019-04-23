@@ -105,7 +105,7 @@ else
         <div class="col-3"></div>
         <div class="col-3"></div>
         <div class="col-3"></div>
-        <div class="col-3" style="text-align: right;"> <a href="Classes/generar_archivo.php" type="button" class="btn btn-success" name="submit" value="Submit Form"> Generar Excel</a>
+        <div class="col-3" style="text-align: right;"> <a href="Classes/generar_archivo.php"  class="btn btn-success" > Generar Excel</a>
         </div>
       </div>
     </div>
@@ -135,12 +135,12 @@ else
                   </form>
                 </th>
                 <th scope="col" style="display: table-cell; vertical-align: middle;">
-                  <a href="files_fecha.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por fecha</a>
+                  <a href="files_fecha.php" class="btn btn-primary" style="margin-top: 5%; background-color: blue; color: white;" > Ordenar por fecha</a>
                 </th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col" style="display: table-cell; vertical-align: middle;">
-                  <a href="files_estado.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por estado</a>
+                  <a href="files_estado.php" class="btn btn-primary" style="margin-top: 5%; background-color: blue; color: white;" > Ordenar por estado</a>
                 </th>
 
                 </th>
@@ -168,7 +168,7 @@ else
         </div>
       </div>
     <?php else : ?>
-      <h4>No hay archivos!</h4>
+    <h4>No se encontraron resultados con esta busquedad</h4>
     <?php endif; ?>
   </section>
   <footer class="footer text-muted bg-light">

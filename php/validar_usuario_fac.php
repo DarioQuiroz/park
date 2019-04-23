@@ -15,7 +15,7 @@ while($mostrar=mysqli_fetch_array($resultado)){
   if($usuario=="facturapiq@piq.com.mx"&&$mostrar['correo']==="facturapiq@piq.com.mx"&& $clave===$mostrar['clave']&& $rfc===$mostrar['rfc']){
     header("location:files_id.php");
   }
-  else if($usuario== $mostrar['correo'] && $clave==$mostrar['clave'])
+  else if($usuario== $mostrar['correo'] && $clave==$mostrar['clave'] && $rfc===$mostrar['rfc'])
   {
     header("location:consulta_fac_por_rfc.php?rfc=$rfc");
   }

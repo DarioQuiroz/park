@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+
 session_start();
 $rfcres=$_GET['rfc'];
 
@@ -11,14 +11,14 @@ if ($varsesion == null || $varsesion = '') {
   }
 ?>
 <?php
-error_reporting(0);
+
 include "db.php";
 if (empty($_POST['name']))
-{//$files = search_genriconombre($_GET['rfc']);
+{$files = search_genriconombre($_GET['rfc']);
   }
 
 else
-$files = search_imgs($_POST['name']);
+//$files = search_imgs($_POST['name']);
 
 ?>
 <html>
@@ -121,16 +121,16 @@ $files = search_imgs($_POST['name']);
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-
+            <th scope="col">Id</th>
               <th scope="col">Nombre</th>
-              <th scope="col">fecha</th>
+              <th scope="col">Fecha</th>
               <th scope="col"></th>
 
             </tr>
           </thead>
           <?php foreach ($files as $f) : ?>
             <tr>
-
+            <td><?php echo $f->id; ?></td>
               <td><?php echo $f->src; ?></td>
               <td><?php echo $f->created_at; ?></td>
               <td><a style="color:blue;" href="./download.php?id=<?php echo $f->id; ?>">Descargar</a></td>

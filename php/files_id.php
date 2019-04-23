@@ -33,15 +33,14 @@ if (empty($_POST['name']))
 <html>
 
 <head>
-  <title>Subir Multiples Imagenes y/o Archivos - By Evilnapsis</title>
+
+  <title>Subir Multiples Archivos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
-  <link rel="stylesheet" media="all" href="../assets/application-6eaf635c425c1686eab15669fd509649ff45060b315fe52358f8f7aef81136c8.css" data-turbolinks-track="reload" />
-  <script src="../assets/application-c2684059e5b98adb61b71a5d9ac339856999beefb748deb1e974ab2a7c2943d0.js" data-turbolinks-track="reload"></script>
- 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <style>
-    
+
     @media (max-width: 600px) {
       #busc_prov {
         flex-direction: column;
@@ -120,7 +119,7 @@ if (empty($_POST['name']))
         <div class="col-3"></div>
         <div class="col-3"></div>
         <div class="col-3"></div>
-        <div class="col-3" style="text-align: right;"> <a href="Classes/generar_archivo.php" type="button" class="btn btn-success" name="submit" value="Submit Form"> Generar Excel</a>
+        <div class="col-3" style="text-align: right;"> <a href="Classes/generar_archivo.php" class="btn btn-success" > Generar Excel</a>
         </div>
       </div>
     </div>
@@ -144,17 +143,22 @@ if (empty($_POST['name']))
                   <form method="post" class="form-signin col-12">
                     <input type="search" name="name" class="form-control" placeholder="Parte del nombre" required>
                     <div class="space-10"></div>
-                    <button id="VER_FAC" class="btn btn-sm vervacantes btn-block" style="     margin-top: 5%;background-color: blue; color: white;" type="submit" name="submit" value="Submit Form">Buscar archivos</button>
+                    <button id="VER_FAC" class="btn btn-sm vervacantes btn-block" style="    margin-top: 5%; background-color: blue; color: white;" type="submit" name="submit" value="Submit Form">Buscar archivos</button>
                   </form>
                 </th>
                 <th scope="col" style="display: table-cell; vertical-align: middle;">
-                  <a href="files_fecha.php" class="btn btn-primary" style="background-color: #3C3CFF; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por fecha</a>
-                </th>
+                <form method="post" class="form-signin col-12">
+                <a href="files_fecha.php" class="btn btn-sm vervacantes btn-block" style="margin-top: 5%; background-color: blue; color: white;"> Ordenar por fecha</a>
+               
+                </form></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col" style="display: table-cell; vertical-align: middle;">
-                  <a href="files_estado.php" class="btn btn-primary" style="background-color: blue; color: white;" type="submit" name="submit" value="Submit Form"> Ordenar por estado</a>
-                </th>
+                <form method="post" class="form-signin col-12">
+                
+                <a href="files_estado.php" class="btn btn-sm vervacantes btn-block" style="margin-top: 5%; background-color: blue; color: white;"> Ordenar por estado</a>
+               
+                </form></th>
 
                 </th>
               </tr>
@@ -181,7 +185,7 @@ if (empty($_POST['name']))
         </div>
       </div>
     <?php else : ?>
-      <h4>No hay archivos!</h4>
+    <h4>No se encontraron resultados con esta busquedad</h4>
     <?php endif; ?>
   </section>
   <footer class="footer text-muted bg-light">
