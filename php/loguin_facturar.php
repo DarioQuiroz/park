@@ -134,7 +134,7 @@
       <div class="col-4"></div>
       <form id="ing_fac" action="validar_usuario_fac.php" method="post" class="form-signin col-4">
 
-        <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+     
         <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required autofocus name="usuario">
         <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required name="clave">
         <input type="text" id="inputRfc" class="form-control" placeholder="RFC" required name="RFC">

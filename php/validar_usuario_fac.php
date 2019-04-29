@@ -23,7 +23,7 @@ while($mostrar=mysqli_fetch_array($resultado)){
   {
     ?>
     <script type="text/javascript">
-alert("¡Los datos que ingresaste no corrrespoonden a ninguna cuenta!");
+alert("¡Los datos que ingresaste no corresponden a ninguna cuenta!");
 //window.location.href='loguin_facturar.php';
 </script>
    <?php
